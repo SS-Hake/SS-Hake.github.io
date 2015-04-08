@@ -1,0 +1,17 @@
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-style: bold;
+	color: #006000;
+	letter-spacing: 2px;
+}
+header {
+	text-align: right;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
