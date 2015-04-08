@@ -3,10 +3,32 @@
 	margin: 0 auto;
 }
 
+#title {
+
+}
+
+a {
+	color: #B7F9B7;
+	font-weight: bold;
+}
+
+a:visited, a:hover {
+	color: #006000;
+}
+
+h2 {
+	text-align: center;
+	color: #4FC54F;
+}
+
+h2:hover {
+	color: #006000;
+	font-weight: bold;
+}
+
 body {
 	font-family: 'Oxygen', sans-serif;
 	font-style: bold;
-	color: #006000;
 	letter-spacing: 2px;
 }
 header {
