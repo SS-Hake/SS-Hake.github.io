@@ -1,13 +1,13 @@
 $(document).ready(function () {
 	var d = new Date();
 	var day = d.getDay();
-	var msg = ["Monday! :(",
+	var msg = ["Sunday! Relax!",
+				"Monday! :(",
 				"Tuesday! Nearly half way!",
 				"Wednesday! Hump day!",
 				"Thursday! Nearly there!",
 				"FRIDAY! Living for the weekend!",
-				"Saturday! Have fun!",
-				"Sunday! Relax!"]
+				"Saturday! Have fun!"]
 
 	$('#' + day).attr('id', 'today');
 	$("#message").text(msg[day]);
