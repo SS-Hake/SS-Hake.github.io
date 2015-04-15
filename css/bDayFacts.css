@@ -118,12 +118,12 @@ form {
 }
 
 input {
-	border: none;
+	border: solid 1px #ccc;
 	margin: 0 20px 0 5px;
 	padding: 5px;
 	font-size: 16px;
 	border-radius: none;
-	background-color: #ccc;
+	background-color: #fffdfa;
 	
 }
 
