@@ -1,7 +1,6 @@
 html,
 body {
 	height: 100%;
-	background-color: #1b7ba1;
 }
 
 #main {
@@ -13,8 +12,8 @@ body {
 	position: relative;
 	z-index: 1;
 	float: left;
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	background-color: #444;
 }
 
