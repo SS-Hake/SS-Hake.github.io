@@ -117,8 +117,10 @@ $(document).ready( function () {
 
 			console.log("[+] Printing facts to screen... \n");
 
+			//Print the month and day of birth.
 			$("#birthday").text("Your birthday is " + months[month] + ' ' + day);
 
+			//Print the age in years, months and days.
 			$("#age_years").text("You are " + age + " years old.");
 			$("#age_months").text("You are " + ageDays + " days old.");
 			$("#age_days").text("You are " + ageMins + " minutes old.");
