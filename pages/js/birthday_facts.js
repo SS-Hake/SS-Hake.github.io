@@ -87,7 +87,7 @@ $(document).ready( function () {
 
 			//Million, ten million, fifty million mins.
 			var millMin = (new Date(bDay.getTime() + 60000000000));
-			var tenMillMin = (new Date(bDay.getTime() + 60000000000));
+			var tenMillMin = (new Date(bDay.getTime() + 60000000000 * 10));
 			var fiftMillMin = (new Date(bDay.getTime() + 3000000000000));
 
 			//Billion seconds.
