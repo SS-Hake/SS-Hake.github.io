@@ -31,7 +31,7 @@ body {
 
 #today {
 	height: 100px;
-	background-color: #54A759;
+	background-color: #54a759;
 
 	box-shadow: -3px 0 0 rgba(0,0,0,0.3);
 	
@@ -52,7 +52,7 @@ body {
 	padding: 50px;
 	font-size: 40px;
 	color: #f6f8f8;
-	background-color: #86C98A;
+	background-color: #86c98a;
 	text-shadow: -3px 3px 0 rgba(0,0,0,0.3);
 
 	box-shadow: 0 3px 0 rgba(0,0,0,0.3);
@@ -103,14 +103,14 @@ header {
 }
 
 #home {
-	background-color: #2980B9;
+	background-color: #2980b9;
 	margin-right: 10px;
 	box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
 
 }
 
 #blog {
-	background-color: #8E44AD;
+	background-color: #8e44ad;
 	margin-right: 10px;
 	box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
 
