@@ -49,15 +49,15 @@ $(document).ready( function () {
 				var day = bDaySplit[2];
 			}
 
+			console.log("[+] Grabbed birthday data... \n");
+
 			//Split the time data when colon is found, same as the date above.
 			var birthTime = $('#btime').val().split(':');
 
 			//Assign the time data to variables.
 			var hour = birthTime[0];
 			var min = birthTime[1];
-
-			console.log(hour);
-			console.log(min);
+			
 			//Assign the date data to variables.
 			var bDay = new Date(year, month, day);
 			//If statement setting btime to the day if there's no time set.
@@ -93,6 +93,8 @@ $(document).ready( function () {
 			//Billion seconds.
 			var billSec = (new Date(bDay.getTime() + 1000000000000));
 
+			console.log("[+] Calculated facts... \n");
+
 			//If the date data is equal to today's date, display a message.
 			if(today.getMonth() == bDay.getMonth() && today.getDate() == bDay.getDate()) {
 				
@@ -112,6 +114,8 @@ $(document).ready( function () {
 
 			//Link the data to the lists in the html page.
 			//TODO: List these with angular.
+
+			console.log("[+] Printing facts to screen... \n");
 
 			$("#birthday").text("Your birthday is " + months[month] + ' ' + day);
 
