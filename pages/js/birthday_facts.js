@@ -57,7 +57,7 @@ $(document).ready( function () {
 			//Assign the time data to variables.
 			var hour = birthTime[0];
 			var min = birthTime[1];
-			
+
 			//Assign the date data to variables.
 			var bDay = new Date(year, month, day);
 			//If statement setting btime to the day if there's no time set.
@@ -126,10 +126,11 @@ $(document).ready( function () {
 			//Display the calculated facts.
 			$("#ten_k").text("Your 10,000th day is " + tenThouDay.toDateString());
 			$("#twenty_k").text("Your 20,000th day is " + twenThouDay.toDateString());
-			$("#fivehun_k").text("Your 500,000th hour is " + fiveHunHour.toDateString());
-			$("#one_mill_mins").text("Your 1,000,000th minute is " + millMin.toDateString());
-			$("#fiftMillMin").text("Yout 50,000,000th minute is " + fiftMillMin.toDateString());
-			$("#one_bill_secs").text("Your 1,000,000,000th second is " + billSec.toDateString());
+			$("#fivehun_k").text("Your 500,000th hour will be on " + fiveHunHour.toDateString());
+			$("#one_mill_mins").text("Your 1,000,000th minute is on " + millMin.toDateString());
+			$("#ten_mill_mins").text("Your 10,000,000th minute is on " + tenMillMin.toDateString());
+			$("#fiftMillMin").text("Yout 50,000,000th minute was on " + fiftMillMin.toDateString());
+			$("#one_bill_secs").text("Your 1,000,000,000th second is on " + billSec.toDateString());
 
 		}
 	});
