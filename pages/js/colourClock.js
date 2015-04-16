@@ -1,8 +1,5 @@
 /* Converts the current time in ints into a hex string which is used as a 
-	base for the background colour.  Might make another one later which 
-	incorporates the hex letters into the conversion.
-
-	TODO: Make a version that uses toString(16) (converts to hex).
+	base for the background colour. 
 */
 $(document).ready(function () {
 
@@ -21,6 +18,9 @@ $(document).ready(function () {
 
 		//Declare a value to store the hex colour later.
 		var hexColour;
+		//Declare a variable to hold the concatenated time and converted time.
+		var concatendatedTime;
+		var hexTime;
 
 		//Add a 0 to the number if it is one digit long. This keeps time time as 6 figures.
 		if(hr < 10) hr = "0" + hr;
@@ -28,13 +28,20 @@ $(document).ready(function () {
 		if(sec < 10) sec = "0" + sec;
 
 		//Javascript will automatically cast an int to string when using the +.
-		//But I cast manually to make sure.
-		hr.toString();
-		min.toString();
-		sec.toString();
+		//But I cast manually as it's good practice.
+		hr = hr.toString();
+		min = min.toString();
+		sec = sec.toString();
 
-		//Assemble the hex colour value.
-		hexColour = "#" + hr + min + sec;
+		//Parse the concatenated string number back to in for hex conversion.
+		concatenatedTime = parseInt(hr+min+sec);
+
+		//Convert the current time to a hexdecimal number.
+		hexTime = concatenatedTime.toString(16);
+
+		//Assemble the hex colour value for the background.
+		//I add an f because 5 character hex codes are not valid CSS.
+		hexColour = "#" + hexTime + "f";
 
 		//print the time with spacer and hex value to the appropriate divs.
 		$("#time").html(hr + spacer + min + spacer + sec);
