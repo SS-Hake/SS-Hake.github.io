@@ -20,11 +20,11 @@
 }
 
 .wave {
-	-webkit-animation: wave .4s linear;
-	-moz-animation: wave .4s linear;
-	-ms-animation: wave .4s linear;
-	-o-animation: wave .4s linear;
-	animation: wave .4s linear;
+	-webkit-animation: wave .5s linear;
+	-moz-animation: wave .5s linear;
+	-ms-animation: wave .5s linear;
+	-o-animation: wave .5s linear;
+	animation: wave .5s linear;
 }
 
 #links_container {
