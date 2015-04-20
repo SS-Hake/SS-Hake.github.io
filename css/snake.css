@@ -1,0 +1,10 @@
+body {
+	height: 1000px;
+	width: 1000px;
+	background:  -webkit-linear-gradient(90deg, rgba(217,235,209,1) 0%, rgba(0,173,208,1) 0%, rgba(55,106,161,1) 22%, rgba(24,40,56,1) 66%, rgba(0,1,22,1) 94%, rgba(0,1,22,1) 100%);
+}
+
+canvas {
+	width: 450;
+	height: 450;
+}

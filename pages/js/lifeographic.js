@@ -15,6 +15,8 @@ $(document).ready(function () {
 	}	
 	$('#week_container').append(units);
 
+	
+
 	console.log("Hello");
 	
 });
