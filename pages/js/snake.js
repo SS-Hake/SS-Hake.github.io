@@ -1,28 +1,138 @@
 $(document).ready(function() {
 
-	var canvas = $("#canvas")[0];
-	var ctx = canvas.getContext("2d");
-	var h = $("#canvas").height();
-	var w = $("#canvas").width();
+    //Declare and initislise canvas.
+    var canvas = $("#canvas")[0];
+    var ctx = canvas.getContext("2d");
+    var height = $("#canvas").height();
+    var width = $("#canvas").width();
 
-	ctx.fillStyle = "clear";
-	ctx.fillRect(0, 0, w, h);
-	ctx.strokeStyle = "black";
-	ctx.strokeRect(0, 0, w, h);
-
+    //Holds the snake cells as the square array did before.
 	var snakeArray;
 
+    var dir;
+
+    var food;
+
+    var score;
+    //Cell height and width are the same so I combine them here for simplicity.
+    var cellHW = 10;
+
     function init() {
+
+        console.log("[+] Init...")
+        dir = "right";
+        constructSnake();
+        makeFood();
+
+        score = 0;
+
+        if(typeof loop != "undefined") clearInterval(loop);
+
+        loop = setInterval(draw, 60);
+
+    }
+    init();
+
+    function constructSnake() {
         
         var length = 5;
         snakeArray = [];
 
         //Count down to 0 from length.
         for(var i = length - 1; i >= 0; i--) {
+            snakeArray.push({x:i, y:0});
+        }
+    }
 
+    function makeFood() {
+        food = { x: Math.round(Math.random() * (width - cellHW) / cellHW),
+                 y: Math.round(Math.random() * (height - cellHW) / cellHW) };
+    }
+
+    function draw() {
+
+        console.log("[+] Drawing...")
+        //Draw the canvas.
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, width, height);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(0, 0, width, height);
+
+        //Might need to refactor this.
+        var nx = snakeArray[0].x;
+        var ny = snakeArray[0].y;
+
+        if(dir == "right") nx++;
+        else if(dir =="left") nx--;
+        else if(dir == "up") ny--;
+        else if(dir == "down") ny++;
+
+        if(nx == -1 || nx == width/cellHW || ny == -1 || ny == height/cellHW || collisionCheck(nx, ny, snakeArray)) {
+
+            //Game restarts here.
+            init();
+            return;
         }
 
+        if(nx == food.x && ny == food.y) {
+            var tail = { x: nx, y: ny };
+            score++;
+            makeFood();
+        } else {
+
+            var tail = snakeArray.pop();
+            tail.x = nx;
+            tail.y = ny;
+        }
+
+        snakeArray.unshift(tail);
+
+        for(var i = 0; i < snakeArray.length; i++) {
+            var cell = snakeArray[i];
+
+            drawCell(cell.x, cell.y);
+        }
+
+        drawCell(food.x, food.y);
+
+        var scoreText = "Score: " + score;
+        ctx.fillText(scoreText, 5, height - 5);
     }
+
+    function drawCell(x, y) {
+
+        //Draw the cells
+        ctx.fillStyle = "green";
+        ctx.fillRect(x * cellHW, y * cellHW, cellHW, cellHW);
+        ctx.strokeStyle = "white";
+        ctx.strokeRect(x * cellHW, y * cellHW, cellHW, cellHW)
+    }
+
+    function collisionCheck(x, y, array) {
+
+        for(var i = 0; i < array.length; i++) { 
+
+            if(array[i].x == x && array[i].y == y) return true;
+        }
+        return false;
+    }
+
+    $(document).keydown(function(event) {
+
+        var keyPressed = event.which;
+
+        //Handle keyboard control input.
+        //Second statement prevents doubling back.
+        if(keyPressed == "37" && dir != "right") dir = "left";
+        else if(keyPressed == "38" && dir != "down") dir = "up";
+        else if(keyPressed == "39" && dir != "left") dir = "right";
+        else if(keyPressed == "40" && dir != "up") dir = "down";
+    })
+
+    function update() {
+
+    }
+
 });
 
 /*
