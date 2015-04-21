@@ -18,3 +18,13 @@ canvas {
 	margin-left:-225px;
 
 }
+
+/*Fixed css from stack overflow. TODO: center the canvas in the content div.*/
+/*canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}*/

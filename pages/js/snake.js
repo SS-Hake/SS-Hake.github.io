@@ -119,6 +119,7 @@ $(document).ready(function() {
 
     $(document).keydown(function(event) {
 
+        event.preventDefault();
         var keyPressed = event.which;
 
         //Handle keyboard control input.
