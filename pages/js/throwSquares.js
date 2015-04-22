@@ -8,6 +8,7 @@
     };
 })(jQuery);
 
+//Simple canvas app which spawns a moving square when the user clicks.
 //When document is ready start the app.
 $(document).ready(function() {
 
@@ -39,6 +40,7 @@ $(document).ready(function() {
 		//Grab the mouse coords, accounting for the canvas not being the whole webpage.
 		var xCoord = event.pageX - canvas.offsetLeft;
 		var yCoord = event.pageY - canvas.offsetTop;
+
 		//Pass the coords.
 		createSquare(xCoord, yCoord);
 	});
