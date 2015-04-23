@@ -1,30 +1,14 @@
-/*body {
-	height: 1000px;
-	width: 1000px;
-	background:  -webkit-linear-gradient(90deg, rgba(217,235,209,1) 0%, rgba(0,173,208,1) 0%, rgba(55,106,161,1) 22%, rgba(24,40,56,1) 66%, rgba(0,1,22,1) 94%, rgba(0,1,22,1) 100%);
-}
-*/
-
 #content {
 
 }
 
 canvas {
 
-	margin: auto;  
-	vertical-align: middle;
-	position:absolute;
-	left:50%;
-	margin-left:-225px;
-
-}
-
-/*Fixed css from stack overflow. TODO: center the canvas in the content div.*/
-/*canvas {
-    padding-left: 0;
+	padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     display: block;
-    width: 800px;
-}*/
+
+}
