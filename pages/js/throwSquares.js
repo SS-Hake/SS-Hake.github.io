@@ -21,12 +21,8 @@ $(document).ready(function() {
 	var mouse = {x: 0, y: 0};
 
 	//Set to the size of window on load.
-	var height = window.innerHeight;
-	var width = window.innerWidth;
-
-	//Set the canvas to scale to window size.
-	canvas.height = height;
-	canvas.width = width;
+	var height = canvas.height; 
+	var width = canvas.width;
 
 	//Call the stack overflow code.
 	$('body').disableSelection();
@@ -56,7 +52,7 @@ $(document).ready(function() {
 		this.move = function() {
 
 			//Clamp X axis.
-			if(this.startX > width) {
+			if(this.startX > width - 10) {
 				this.startX = width - 10;
 				this.endX = -this.endX;
 			} else if(this.startX < 10) {
@@ -70,7 +66,7 @@ $(document).ready(function() {
 			console.log(height);*/
 
 			//Clamp Y axis.
-			if(this.startY > height -10) {
+			if(this.startY > height - 10) {
 				this.startY = height - 10;
 				this.endY = -this.endY;
 			} else if(this.startY < 10) {
