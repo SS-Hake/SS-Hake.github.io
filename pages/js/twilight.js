@@ -143,7 +143,7 @@ $(document).ready(function () {
     function generatePlanePos() {
     
         planePosX = 0;
-        planePosY = Math.floor(Math.random() * height / 2) + 1;
+        planePosY = Math.floor(Math.random() * height / 2) + height / 6;
     }
 
     function generateRates() {
@@ -200,7 +200,7 @@ $(document).ready(function () {
         drawFromArray(planetPosX, planetPosY, drawPlanet, counter);
         drawFromArray(starMidPosX, starMidPosY, drawStarAlpha, counter);
 
-	    if (x > width || y < 0) { x = 0; y = 400; counter = 0; generateRates(); generatePlanePos();};
+	    if (planePosX > width || planePosY < 0) { planePosX = 0; planePosY = 400; counter = 0; generateRates(); generatePlanePos();};
     }, 60);
 
 });
