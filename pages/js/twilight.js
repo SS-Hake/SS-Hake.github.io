@@ -21,6 +21,13 @@ $(document).ready(function () {
 
     var counter = 0;
 
+    var starXPositions = [];
+    var starYPositions = [];
+    var starBXPositions = [];
+    var starBYPositions = [];
+    var planetXPos = [];
+    var planetYPos = [];
+
     function drawPixel(x, y, r, g, b, a) {
 
     	var index = (x + y * width) * 4;
@@ -44,7 +51,7 @@ $(document).ready(function () {
 		ctx.fill();
 		ctx.closePath();
 
-    	if(counter % 20 == 0) {
+    	if(counter % 40 == 0) {
 
     		console.log("[+] Red" + counter)
     		ctx.beginPath();
@@ -53,7 +60,7 @@ $(document).ready(function () {
 			ctx.rect(x-5, y-5, 10, 10)
 			ctx.fill();
 			ctx.closePath();
-    	} else if (counter % 15 == 0) {
+    	} else if (counter % 20 == 0) {
 
     		console.log("[+] Green" + counter)
 	    	ctx.beginPath();
@@ -70,15 +77,116 @@ $(document).ready(function () {
 
     }
 
-    function drawStar(x, y, counter) {
+    function drawStarAlpha(x, y, counter) {
 
-    	ctx.beginPath();
-		ctx.fillStyle = "#ccc";
-		ctx.rect(x, y, 5, 2);
-		ctx.fill();
-		ctx.closePath();
+        if(counter % 2 == 0) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(x - 0.5, y - 0.5, 1, 1);
+            ctx.rect(x, y, 1, 1);
+            ctx.fill();
+            ctx.closePath();
+        } else {
+
+        	ctx.beginPath();
+    		ctx.fillStyle = "#ccc";
+    		ctx.rect(x - 0.5, y, 1.4, 1);
+            ctx.rect(x, y - 0.5, 1.4, 1);
+    		ctx.fill();
+    		ctx.closePath();
+        }
 
     }
+
+    function drawStarBeta(x, y, counter) {
+
+        if(counter % 4 == 0) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(x - 0.5, y - 0.5, 1, 1);
+            ctx.rect(x, y, 1, 1);
+            ctx.fill();
+            ctx.closePath();
+        } else {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(x - 0.5, y, 1.4, 1);
+            ctx.rect(x, y - 0.5, 1.4, 1);
+            ctx.fill();
+            ctx.closePath();
+        }
+    }    
+
+    function drawPlanet(x, y, counter) {
+
+        if(counter % 2 == 0) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#fff";
+            ctx.rect(x - 0.5, y - 1, 2, 2);
+            ctx.rect(x, y, 2, 2);
+            ctx.fill();
+            ctx.closePath();
+        } else {
+            console.log("[+] Drawing beta...");
+            ctx.beginPath();
+            ctx.fillStyle = "#fff";
+            ctx.rect(x - 0.5, y, 2, 2);
+            ctx.rect(x, y - 0.5, 2, 2);
+            ctx.fill();
+            ctx.closePath();
+            
+        }
+
+    }
+
+    function generateStarPosA(lowerVal, upperVal, quantity) {
+
+
+        for(var i = 0; i < quantity; i++) {
+            
+            starXPositions[i] = Math.floor(Math.random() * width) + 0;
+            starYPositions[i] = Math.floor(Math.random() * upperVal) + lowerVal;
+        }
+
+    }
+
+    function generateStarPosB(lowerVal, upperVal, quantity) {
+
+
+        for(var i = 0; i < quantity; i++) {
+            
+            starBXPositions[i] = Math.floor(Math.random() * width) + 0;
+            starBYPositions[i] = Math.floor(Math.random() * upperVal) + lowerVal;
+        }
+
+    }
+
+    function generatePlanetPos(lowerVal, upperVal, quantity) {
+
+        for(var i = 0; i < quantity; i++) {
+
+            planetXPos[i] = Math.floor(Math.random() * width) + 0;
+            planetYPos[i] = Math.floor(Math.random() * upperVal) + lowerVal;
+        }
+    }
+
+    function init() {
+
+        console.log("[+] Init...");
+        generateStarPosA(0, height / 2, 25);
+        generateStarPosB(0, height / 2, 25);
+
+        generatePlanetPos(height / 3, height / 1.2, 2);
+
+        console.log(starYPositions[2]);
+
+    }
+
+    init();
 
     setInterval(function() {
 
@@ -104,6 +212,27 @@ $(document).ready(function () {
 	    updateCanvas();
 
 	    drawPlane(x, y, counter);
+
+        for(var i = 0; i < starXPositions.length; i++) {
+            drawStarAlpha(starXPositions[i], starYPositions[i], counter);
+        }
+        for(var i = 0; i < starXPositions.length; i++) {
+            drawStarBeta(starBXPositions[i], starBYPositions[i], counter);
+        }
+        for(var i = 0; i < planetXPos.length; i++) {
+            drawPlanet(planetXPos[i], planetYPos[i], counter);
+        }
+
+
+        /*drawStar(200, 200, counter);
+        drawStar(250, 500, counter);
+        drawStar(100, 400, counter);
+        drawStar(200, 600, counter);
+        drawStar(150, 300, counter);
+    */
+        //drawPlanet(400, 400, counter);
+
+        //generateStars(0, 500, 5, counter);
 
 	    if (x > width || y > height) { x = 0; y = 400; counter = 0;};
 
