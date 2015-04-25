@@ -19,8 +19,8 @@ $(document).ready(function () {
     ctx.strokeStyle = "black";
     ctx.strokeRect(0, 0, width, height);
 
-    var PlaneL = function(firstName) {
-        this.firstName = firstName;
+
+    var PlaneL = function() {
         this.xCoord = 0;
         this.yCoord = 0;
         this.xRate = 0;
@@ -40,11 +40,6 @@ $(document).ready(function () {
     PlaneL.prototype.move = function() {
         this.xCoord += this.xRate;
         this.yCoord -= this.yRate;
-    }
-
-    PlaneL.prototype.print = function() {
-        console.log("xCoord = " + this.xCoord + "\n");
-        console.log("yCoord = " + this.yCoord + "\n");
     }
 
     PlaneL.prototype.draw = function(counter) {
@@ -73,6 +68,53 @@ $(document).ready(function () {
             ctx.fillStyle = "#FF5050";
             /*ctx.arc(x-1, y-1, 4, 0, Math.PI * 2, true);*/
             ctx.rect(this.xCoord-2, this.yCoord-2, 4, 4)
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+
+    var Satellite = function() {
+        this.xCoord = 0;
+        this.yCoord = 0;
+        this.xRate = 0;
+        this.yRate = 0;
+    };
+
+    Satellite.prototype.genStartPos = function() {
+        this.xCoord = 1000;
+        this.yCoord = (Math.random() * height / 4) + 0;
+    }
+
+    Satellite.prototype.genRates = function() {
+        this.xRate = (Math.random() * 1) + 0.5;
+        this.yRate = (Math.random() * 1.5) + -1;
+    }
+
+    Satellite.prototype.genVisRange = function() {
+
+    }
+
+    Satellite.prototype.move = function() {
+        this.xCoord -= this.xRate;
+        this.yCoord -= this.yRate;
+    }
+
+    Satellite.prototype.draw = function(counter) {
+
+        if(counter % 2 == 0) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(this.xCoord - 0.5, this.yCoord - 0.5, 1, 1);
+            ctx.rect(this.xCoord, this.yCoord, 1, 1);
+            ctx.fill();
+            ctx.closePath();
+        } else {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(this.xCoord - 0.5, this.yCoord, 1.4, 1);
+            ctx.rect(this.xCoord, this.yCoord - 0.5, 1.4, 1);
             ctx.fill();
             ctx.closePath();
         }
@@ -186,6 +228,11 @@ $(document).ready(function () {
 
         PlaneLeft.genStartPos();
         PlaneLeft.genRates();
+
+        SatRight = new Satellite();
+
+        SatRight.genStartPos();
+        SatRight.genRates();
         //console.log("yRate = " + PlaneLeft.yRate);
         //console.log("YCoord = " + PlaneLeft.yCoord);
         //PlaneLeft.print();
@@ -216,18 +263,21 @@ $(document).ready(function () {
         PlaneLeft.move();
         PlaneLeft.draw(counter);
 
-	    if (PlaneLeft.xCoord > width || PlaneLeft.yCoord < 0) { 
+        SatRight.move();
+        SatRight.draw();
+
+	    if(PlaneLeft.xCoord > ((Math.random() * 3000) + 1000) || PlaneLeft.yCoord < -200) { 
+            console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();
             PlaneLeft.genRates();
             counter = 0;
-
-            var milis = Math.round((Math.random() * 10000) + 0);
-
-            setInterval(function() {
-
-            }, milis);
-            console.log(milis);
         };
+
+        if(SatRight.xCoord < -((Math.random() * 2000) + 1000) || SatRight.yCoord < -200) {
+            console.log(SatRight.xCoord);
+            SatRight.genStartPos();
+            SatRight.genRates();
+        }
     }, 60);
 
 });
