@@ -19,11 +19,69 @@ $(document).ready(function () {
     ctx.strokeStyle = "black";
     ctx.strokeRect(0, 0, width, height);
 
+    var PlaneL = function(firstName) {
+        this.firstName = firstName;
+        this.xCoord = 0;
+        this.yCoord = 0;
+        this.xRate = 0;
+        this.yRate = 0;
+    };
+
+    PlaneL.prototype.genStartPos = function() {
+        this.xCoord = 0;
+        this.yCoord = (Math.random() * height / 2) + height / 6;
+    }
+
+    PlaneL.prototype.genRates = function() {
+        this.xRate = (Math.random() * 2.5) + 1;
+        this.yRate = (Math.random() * 0.5) + 0;
+    }
+
+    PlaneL.prototype.move = function() {
+        this.xCoord += this.xRate;
+        this.yCoord -= this.yRate;
+    }
+
+    PlaneL.prototype.print = function() {
+        console.log("xCoord = " + this.xCoord + "\n");
+        console.log("yCoord = " + this.yCoord + "\n");
+    }
+
+    PlaneL.prototype.draw = function(counter) {
+
+        ctx.beginPath();
+        ctx.fillStyle = "#ccc";
+        /*ctx.arc(x, y, 2, 0, Math.PI * 2, true);*/
+        ctx.rect(this.xCoord, this.yCoord, 5, 2);
+        ctx.fill();
+        ctx.closePath();
+
+        if(counter % 40 == 0) {
+            //Green brighter as right hand side of plane is towards screen.
+
+            console.log("[+] Green " + counter);
+            ctx.beginPath();
+            ctx.fillStyle = "#339933"; /*"#AB5C78";*/
+            /*ctx.arc(x, y, 5, 0, Math.PI * 2, true);*/
+            ctx.rect(this.xCoord-5, this.yCoord-5, 10, 10)
+            ctx.fill();
+            ctx.closePath();
+        } else if (counter % 20 == 0) {
+
+            console.log("[+] Red " + counter);
+            ctx.beginPath();
+            ctx.fillStyle = "#FF5050";
+            /*ctx.arc(x-1, y-1, 4, 0, Math.PI * 2, true);*/
+            ctx.rect(this.xCoord-2, this.yCoord-2, 4, 4)
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+
+    var planeL;
+
     var x = 0;
     var y = 400;
-
-    var xRate = 2;
-    var yRate = 0.2;
 
     var counter = 0;
 
@@ -40,41 +98,6 @@ $(document).ready(function () {
 
     function updateCanvas() {
     	ctx.putImageData(canvasData, 0, 0);
-    }
-
-    function drawPlane(x, y, counter) {
-
-    	ctx.beginPath();
-		ctx.fillStyle = "#ccc";
-		/*ctx.arc(x, y, 2, 0, Math.PI * 2, true);*/
-		ctx.rect(x, y, 5, 2);
-		ctx.fill();
-		ctx.closePath();
-
-    	if(counter % 40 == 0) {
-            //Green brighter as right hand side of plane is towards screen.
-
-    		console.log("[+] Green" + counter);
-    		ctx.beginPath();
-			ctx.fillStyle = "#339933"; /*"#AB5C78";*/
-			/*ctx.arc(x, y, 5, 0, Math.PI * 2, true);*/
-			ctx.rect(x-5, y-5, 10, 10)
-			ctx.fill();
-			ctx.closePath();
-    	} else if (counter % 20 == 0) {
-
-            console.log("[+] Red" + counter);
-	    	ctx.beginPath();
-			ctx.fillStyle = "#FF5050";
-			/*ctx.arc(x-1, y-1, 4, 0, Math.PI * 2, true);*/
-			ctx.rect(x-2, y-2, 4, 4)
-			ctx.fill();
-			ctx.closePath();
-		}
-    }
-
-    function drawPlanes(startX, startY, rateX, rateY, counter) {
-
     }
 
     function drawStarAlpha(x, y, counter) {
@@ -130,7 +153,6 @@ $(document).ready(function () {
             ctx.fill();
             ctx.closePath();
         } else {
-            console.log("[+] Drawing beta...");
             ctx.beginPath();
             ctx.fillStyle = "#fff";
             ctx.rect(x - 0.5, y, 2, 2);
@@ -138,17 +160,6 @@ $(document).ready(function () {
             ctx.fill();
             ctx.closePath();
         }
-    }
-
-    function generatePlanePos() {
-    
-        planePosX = 0;
-        planePosY = Math.floor(Math.random() * height / 2) + height / 6;
-    }
-
-    function generateRates() {
-        xRate = Math.floor(Math.random() * 2.5) + 1;
-        yRate = Math.floor(Math.random() * 1)  + 0;
     }
 
     function generatePos(xArray, yArray, lowBound, upBound, quantity) {
@@ -169,9 +180,16 @@ $(document).ready(function () {
         generatePos(starBetaPosX, starBetaPosY, 0, height / 2, 25);
         generatePos(planetPosX, planetPosY, 0, height / 1.2, 8);
 
-        generatePlanePos();
         generatePos(starMidPosX, starMidPosY, height / 2, height / 1.1, 20);
-        console.log(starAlphaPosY[2]);
+
+        PlaneLeft = new PlaneL();
+
+        PlaneLeft.genStartPos();
+        PlaneLeft.genRates();
+        //console.log("yRate = " + PlaneLeft.yRate);
+        //console.log("YCoord = " + PlaneLeft.yCoord);
+        //PlaneLeft.print();
+        //console.log("YCoord = " + PlaneLeft.yCoord);
     }
 
     init();
@@ -185,14 +203,9 @@ $(document).ready(function () {
 
     //Loop
     setInterval(function() {
-
-    	planePosX += xRate;
-    	planePosY -= yRate;
     	counter += 1;
 
 	    updateCanvas();
-
-	    drawPlane(planePosX, planePosY, counter);
 
         drawFromArray(starTopPosX, starTopPosY, drawStarAlpha, counter);
         drawFromArray(starAlphaPosX, starAlphaPosY, drawStarAlpha, counter);
@@ -200,7 +213,24 @@ $(document).ready(function () {
         drawFromArray(planetPosX, planetPosY, drawPlanet, counter);
         drawFromArray(starMidPosX, starMidPosY, drawStarAlpha, counter);
 
-	    if (planePosX > width || planePosY < 0) { planePosX = 0; planePosY = 400; counter = 0; generateRates(); generatePlanePos();};
+        PlaneLeft.move();
+        PlaneLeft.draw(counter);
+
+	    if (PlaneLeft.xCoord > width || PlaneLeft.yCoord < 0) { 
+            PlaneLeft.genStartPos();
+            PlaneLeft.genRates();
+            counter = 0;
+
+            var milis = Math.round((Math.random() * 10000) + 0);
+
+            setInterval(function() {
+
+            }, milis);
+            console.log(milis);
+        };
     }, 60);
 
 });
+
+//0xKB6F3lnc4h
+
