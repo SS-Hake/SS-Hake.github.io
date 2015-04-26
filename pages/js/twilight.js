@@ -72,7 +72,7 @@ $(document).ready(function () {
             ctx.closePath();
         }
     }
-
+    //
     var Satellite = function() {
         this.xCoord = 0;
         this.yCoord = 0;
@@ -266,14 +266,14 @@ $(document).ready(function () {
         SatRight.move();
         SatRight.draw();
 
-	    if(PlaneLeft.xCoord > ((Math.random() * 3000) + 1000) || PlaneLeft.yCoord < -200) { 
+	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
             console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();
             PlaneLeft.genRates();
             counter = 0;
         };
 
-        if(SatRight.xCoord < -((Math.random() * 2000) + 1000) || SatRight.yCoord < -200) {
+        if(SatRight.xCoord < -((Math.random() * (width * 2)) + 1000) || SatRight.yCoord < -200) {
             console.log(SatRight.xCoord);
             SatRight.genStartPos();
             SatRight.genRates();
