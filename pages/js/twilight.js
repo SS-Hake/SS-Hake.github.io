@@ -134,7 +134,7 @@ $(document).ready(function () {
 
     ShootingStar.prototype.genRates = function() {
         this.xRate = (Math.random() * 0.2) + 0.01;
-        this.yRate = (Math.random() * 4) + 3);
+        this.yRate = (Math.random() * 4) + 3;
     }
 
     ShootingStar.prototype.move = function() {
@@ -317,6 +317,8 @@ $(document).ready(function () {
 
         ShootStar.move();
         ShootStar.draw();
+
+
 	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
             console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();
