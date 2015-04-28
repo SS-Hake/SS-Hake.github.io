@@ -120,6 +120,49 @@ $(document).ready(function () {
         }
     }
 
+    var ShootingStar = function() {
+        this.xCoord = 0;
+        this.yCoord = 0;
+        this.xRate = 0;
+        this.yRate = 0;
+    }
+
+    ShootingStar.prototype.genStartPos = function() {
+        this.xCoord = (Math.random() * width) + 0;
+        this.yCoord = 0;
+    }
+
+    ShootingStar.prototype.genRates = function() {
+        this.xRate = (Math.random() * 0.2) + 0.01;
+        this.yRate = (Math.random() * 4) + 3);
+    }
+
+    ShootingStar.prototype.move = function() {
+        this.xCoord += this.xRate;
+        this.yCoord += this.yRate;
+    }
+
+    ShootingStar.prototype.draw = function(counter) {
+        
+        if(counter % 2 == 0) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(this.xCoord - 0.5, this.yCoord - 0.5, 1, 1);
+            ctx.rect(this.xCoord, this.yCoord, 1, 1);
+            ctx.fill();
+            ctx.closePath();
+        } else {
+
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.rect(this.xCoord - 0.5, this.yCoord, 1.4, 1);
+            ctx.rect(this.xCoord, this.yCoord - 0.5, 1.4, 1);
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+
     var planeL;
 
     var x = 0;
