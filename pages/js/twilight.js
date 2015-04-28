@@ -133,8 +133,8 @@ $(document).ready(function () {
     }
 
     ShootingStar.prototype.genRates = function() {
-        this.xRate = (Math.random() * 0.2) + 0.01;
-        this.yRate = (Math.random() * 4) + 3;
+        this.xRate = (Math.random() * 1) + 0.2;
+        this.yRate = 15;
     }
 
     ShootingStar.prototype.move = function() {
@@ -142,24 +142,27 @@ $(document).ready(function () {
         this.yCoord += this.yRate;
     }
 
+    //TODO: Fix angle and box angle.
     ShootingStar.prototype.draw = function(counter) {
 
-        if(counter % 2 == 0) {
+        if(/*counter % 2 == 0 &&*/ this.yCoord < height / 2) {
 
             ctx.beginPath();
             ctx.fillStyle = "#ccc";
-            ctx.rect(this.xCoord - 0.5, this.yCoord - 0.5, 1, 1);
-            ctx.rect(this.xCoord, this.yCoord, 1, 1);
+            //ctx.rect(this.xCoord - 0.5, this.yCoord - 0.5, 1, 1);
+            ctx.rect(this.xCoord, this.yCoord, 1, 10);
             ctx.fill();
             ctx.closePath();
-        } else {
+        } /*else if(this.yCoord < height / 2) {
 
             ctx.beginPath();
             ctx.fillStyle = "#ccc";
-            ctx.rect(this.xCoord - 0.5, this.yCoord, 1.4, 1);
-            ctx.rect(this.xCoord, this.yCoord - 0.5, 1.4, 1);
+            //ctx.rect(this.xCoord - 0.5, this.yCoord, 1.4, 1);
+            ctx.rect(this.xCoord, this.yCoord - 0.5, 1, 10);
             ctx.fill();
-            ctx.closePath();
+            ctx.closePath();*/
+         else {
+
         }
     }
 
