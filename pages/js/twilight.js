@@ -143,7 +143,7 @@ $(document).ready(function () {
     }
 
     ShootingStar.prototype.draw = function(counter) {
-        
+
         if(counter % 2 == 0) {
 
             ctx.beginPath();
@@ -276,6 +276,12 @@ $(document).ready(function () {
 
         SatRight.genStartPos();
         SatRight.genRates();
+
+        ShootStar = new ShootingStar();
+
+        ShootStar.genStartPos();
+        ShootStar.genRates();
+
         //console.log("yRate = " + PlaneLeft.yRate);
         //console.log("YCoord = " + PlaneLeft.yCoord);
         //PlaneLeft.print();
@@ -309,6 +315,8 @@ $(document).ready(function () {
         SatRight.move();
         SatRight.draw();
 
+        ShootStar.move();
+        ShootStar.draw();
 	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
             console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();
