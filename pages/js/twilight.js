@@ -128,12 +128,12 @@ $(document).ready(function () {
     }
 
     ShootingStar.prototype.genStartPos = function() {
-        this.xCoord = (Math.random() * width) + 0;
+        this.xCoord = width / 2;
         this.yCoord = 0;
     }
 
     ShootingStar.prototype.genRates = function() {
-        this.xRate = (Math.random() * 1) + 0.2;
+        this.xRate = 10
         this.yRate = 15;
     }
 
@@ -146,22 +146,18 @@ $(document).ready(function () {
     ShootingStar.prototype.draw = function(counter) {
 
         if(/*counter % 2 == 0 &&*/ this.yCoord < height / 2) {
-
+            //console.log("This.XCoord:" + this.xCoord);
+            console.log("This.YCoord:" + this.yCoord);
+            ctx.save();
             ctx.beginPath();
-            ctx.fillStyle = "#ccc";
-            //ctx.rect(this.xCoord - 0.5, this.yCoord - 0.5, 1, 1);
+            ctx.translate(500, 0 + 5);
+            ctx.rotate(45 * Math.PI / 180);
             ctx.rect(this.xCoord, this.yCoord, 1, 10);
             ctx.fill();
-            ctx.closePath();
-        } /*else if(this.yCoord < height / 2) {
-
-            ctx.beginPath();
             ctx.fillStyle = "#ccc";
-            //ctx.rect(this.xCoord - 0.5, this.yCoord, 1.4, 1);
-            ctx.rect(this.xCoord, this.yCoord - 0.5, 1, 10);
-            ctx.fill();
-            ctx.closePath();*/
-         else {
+            ctx.closePath();
+            ctx.restore();
+        } else {
 
         }
     }
@@ -284,6 +280,7 @@ $(document).ready(function () {
 
         ShootStar.genStartPos();
         ShootStar.genRates();
+        console.log("Shoot start Coords: x: " + ShootStar.xCoord + " y: " +  ShootStar.yCoord);
 
         //console.log("yRate = " + PlaneLeft.yRate);
         //console.log("YCoord = " + PlaneLeft.yCoord);
