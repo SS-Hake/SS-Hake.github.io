@@ -1,128 +1,23 @@
-<!DOCTYPE html>
-<!-- Start html. -->
-<html>
-	
-	<!-- Head, links to css and js etc. -->
-	<head>
-		<!--Meta tags - Description tag useful for google search subtitles. -->
-		<meta charset="utf-8">
-		<meta name="Description" CONTENT="Author: S. C. Scott-Hake, Category: Assorted Javascript library examples.">
+---
+layout: default
+---
 
-		<title>Hake Blog | Home</title>
-		<link rel="icon" type="image/png" href="favicon.png">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
-		
-		<!-- Google Analytics gubbins. -->
-		<script src="pages/js/googleAnalytics.js"></script>
-	</head>
+<div class="home">
 
-	<!-- Body. -->
-	<body>
+  <h1 class="page-heading">Posts</h1>
 
-		<!-- Content wrapper. -->
-		<div id="wrapper">
-			
-		<!-- Main content. -->
-			<header>
-				<div id="title_container">
-					<img src="images/HakeBlogLogo.png">
-					<h1>
-						<a href="/">HAKE BLOG</a></h1>
-					<h2>A GLIMPSE INTO THE BRAIN OF SAM SCOTT-HAKE</h2>
-				</div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-				<nav>
-					<a href="index.html">Home</a> <a href=""> |</a>
-					<a href="about.html">About</a> <a href=""> |</a>
-					<a href="blog.html">Blog</a>
-				</nav>
-					
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-				<div id="current_project_container">
-					<h3> Current project: Web design </h3>
-				</div>
-			</header>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-			<div id="content">
-				<!-- TODO: Sort out the article tags. <article> -->
-					<h4>Web design</h4>	
-					<h6>9/04/15</h6>
-					<p>
-						I'm currently learning how to use a selection of javascript libraries beginning with <a href="http://jquery.com/">jQuery</a> before moving on to <a href="https://angularjs.org/">Angular.js</a>, <a href="http://threejs.org/">three.js</a> and <a href="https://nodejs.org/">Node.js</a>. 
-					</p>
-					<p>
-						Below are my preliminary efforts, a list of pages showing some example projects.
-					</p>
-					<p>
-						Check back often, as I will be updating the site with new pages as regularly as I can while still completing university work.
-						(I'm aiming for a new page every two days!)
-					</p>
-
-					<div id="site_list_wrapper">
-						<ol>
-							<li>
-								<span class="item"> 08/04/15 </span> <a href="pages/techBoxes.html">Squares</a>
-							</li>
-							<li>
-								<span class="item"> 09/04/15 </span> <a href="pages/daycount.html">Day Counter</a>
-							</li>
-							<li>
-								<span class="item"> 10/04/15 </span> <a href="pages/animator.html">Animated Boxes</a>
-							</li>
-							<li>
-								<span class="item"> 14/04/15 </span> <a href="pages/birthdayFacts.html">Birthday Facts</a>
-							</li>
-							<li>
-								<span class="item"> 16/04/15 </span> <a href="pages/colourClock.html">Colour Clock</a>
-							</li>
-							<li>
-								<span class="item"> 17/04/15 </span> <a href="pages/waveSquares.html">Blinking Squares</a>
-							</li>
-						</ol>
-						<ol>
-							<li>
-								<h4>Week 2</h4>
-							</li>
-							<li>
-								<span class="item"> 20/04/15 </span> <a href="pages/throwSquares.html">Throwing squares</a>
-							</li>
-							<li>
-								<span class="item"> 21/04/15 </span> <a href="pages/snake.html">Snake</a>
-							</li>
-							<li>
-								<span class="item"> 23/04/15 </span> <a href="pages/canvasClock.html">Canvas Clock</a>
-							</li>
-							<li>
-								<span class="item"> 23.5/04/15 </span> <a href="pages/particlesTest.html">Particles Test</a>
-							</li>
-							<li>
-								<span class="item"> 24/04/15 </span> <a href="pages/angularTest.html">Angular Test</a>
-							</li>
-
-						</ol>
-
-						<ol>
-							<li>
-								<h4>Ongoing projects</h4> <a href="/pages/twilight.html">Twilight.js</a>
-							</li>
-							
-						</ol>
-
-
-
-
-					</div>
-				<!--</article> -->
-			</div>
-
-			<!-- Footer with links and info. -->
-			<footer>
-
-			</footer>
-
-		<!-- End wrapper. -->
-		</div>
-
-	</body>
-</html>
+</div>
