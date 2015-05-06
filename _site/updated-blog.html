@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Hake Blog!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Hake Blog v2.0</title>
+  <meta name="description" content="Welcome to the new Hake Blog!">
 
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/jekyll/update/2015/05/06/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://yourdomain.com/updated-blog.html">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
 </head>
 
@@ -53,12 +54,12 @@
  -->
 <header>
 
-    <div class="wrapper">
+    <div id="wrapper">
 
         <div id="title-wrapper">
 
             <!-- Hake Blog logo as svg file. -->
-            <div class="logo"> <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <div id="logo"> <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
@@ -138,7 +139,7 @@
 
                 <a href="">Home</a> | 
                 <a href="">About</a> | 
-                <a href="">Blog</a> | 
+                <a href="">Blog</a>
 
             </nav>
 
@@ -153,26 +154,28 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Welcome to Hake Blog!</h1>
+  <div class="post-header">
+    <h1 class="post-title">Hake Blog v2.0</h1>
     <p class="post-meta">May 6, 2015</p>
-  </header>
+  </div>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p>Welcome to the new Hake Blog!</p>
 
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>I’ve finally upgraded to a content management system; Jekyll.  I had been looking at other CMSs for a while but none of them seemed that applicable to a site of this size and structure.  I have used Ruby on Rails and Wordpress before, but they seemed too bukly for use on this site.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>I chose Jekyll for a number of reasons including:</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+<ul>
+  <li>Extreme simplicity; the clean syntax and Angular-esque loops</li>
+  <li>No database, which means faster loading</li>
+  <li>Simple markdown syntax for content</li>
+  <li>Compatibility with Github Hosting</li>
+</ul>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<p>Jekyll essentially generates the same static pages that I was writing, but increases writing speed by building the pages from pre-written code modules. This all comes without the need for dynamic hosting, which is a requirement for Wordpress and the like.  Plus, there is always the option to extend with Disqus or a new theme in the future if I do want to add some interactivity or change the look of the site completely.</p>
 
+<p>Over the next 24 hours I’ll set up a custom theme for the site and import my old projects and blog posts.  Once this time is invested, adding new content should become very easy indeed!</p>
 
   </article>
 

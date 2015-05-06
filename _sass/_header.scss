@@ -1,0 +1,36 @@
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#title-wrapper {
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 250px;
+}
+
+#title-wrapper h1 {
+	margin: 0 auto;
+	width: 20%;
+	font-weight: 700;
+}
+
+#title-wrapper p {
+	font-weight: 400;
+}
+
+#wrapper nav a {
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#wrapper nav a:hover {
+	color: #333333
+}
