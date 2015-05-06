@@ -13,11 +13,15 @@
 
 #title-wrapper h1 {
   margin: 0 auto;
-  width: 20%;
+  width: 200px;
   font-weight: 700; }
 
 #title-wrapper p {
-  font-weight: 400; }
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 30%;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc; }
 
 #wrapper nav a {
   text-transform: uppercase;
