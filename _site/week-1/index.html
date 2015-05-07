@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hake Blog</title>
-  <meta name="description" content="Adventures in web design.
-">
+  <title>Week 1</title>
+  <meta name="description" content="First published: 18/04/15.">
 
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/week-1">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
 
   <script src="/assets/javascript/analytics.js"></script>
@@ -154,44 +153,30 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <div id="side-bar">
-    <ul class="post-list">
-      
-        <li>
-          <span class="post-meta">May 7, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/week-1">Week 1</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 7, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/2015/05/07/existing-javascript.html">Existing Javascript</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 6, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/updated-blog.html">Hake Blog v2.0</a>
-          </h2>
-        </li>
-      
-    </ul>
+  <div class="post-header">
+    <h1 class="post-title">Week 1</h1>
+    <p class="post-meta">May 7, 2015</p>
   </div>
 
-  <div id="content-main">
-    <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-  </div>
+  <article class="post-content">
+    <p>First published: 18/04/15.</p>
+
+<p>So, it’s the end of my first week.  I wanted to spend this week getting used to web development again, creating a few apps which just selected some elements and did something with them. The most basic concept of jQuery is to <a href="http://learn.jquery.com/using-jquery-core/selecting-elements/">“select some elements and do something with them”</a>, so jQuery seemed like a good starting point!</p>
+
+<p>I’ve made 6 apps so far, I started with a very simple script which handled the cursor entering a large selection of square divs I had created manually by copy-pasting HTML elements.  I ended the week with an app which uses a wrapper library on top of jQuery to automate the generation and animation of 1000 divs, I’m quite happy with that progression.  Along the way, I’ve been re-learning the basic concepts of Javascript and learning a lot more about jQuery, as well as little tips and tricks I hadn’t heard before.</p>
+
+<p>The first of these tips was to use CDNs (Content Delivery Networks) to host my Javascript libraries. I found <a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/">this interesting post</a> which extolled the virtues of letting <a href="https://developers.google.com/speed/libraries/">Google host your libraries for you</a>.  Adding the little tag pointing to the hosts library, rather than a copy I am hosting, results in faster loading times, cross-site caching and when I get around to using them; benefits when using AJAX calls.</p>
+
+<p>The other tips and tricks cropped up as I was reading through the jQuery documentation. Things like <a href="http://learn.jquery.com/performance/append-outside-loop/">appending outside of loops</a> to increase performance and reduce computationally costly DOM insertion.  Or, using #ID and element selectors where ever possible, due to the fact that they are based on native DOM operations, which reduce search space that using attribute or pseudo might entail.</p>
+
+<p>Over the next week I plan to expand my usage of underscore and put out some more complex jQuery apps.  I’ve also found a <a href="https://github.com/VincentGarreau/particles.js/">cool library</a> for making particles I’d like to try out, so one of the week’s apps will probably involve that (although I will be forced to host it myself!).</p>
+
+<p>Hours logged: 12.</p>
+
+
+  </article>
 
 </div>
 

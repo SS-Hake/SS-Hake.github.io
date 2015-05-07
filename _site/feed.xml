@@ -6,9 +6,46 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 May 2015 00:31:21 +0100</pubDate>
-    <lastBuildDate>Fri, 08 May 2015 00:31:21 +0100</lastBuildDate>
+    <pubDate>Fri, 08 May 2015 00:49:33 +0100</pubDate>
+    <lastBuildDate>Fri, 08 May 2015 00:49:33 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Week 1</title>
+        <description>&lt;p&gt;First published: 18/04/15.&lt;/p&gt;
+
+&lt;p&gt;So, it’s the end of my first week.  I wanted to spend this week getting used to web development again, creating a few apps which just selected some elements and did something with them. The most basic concept of jQuery is to &lt;a href=&quot;http://learn.jquery.com/using-jquery-core/selecting-elements/&quot;&gt;“select some elements and do something with them”&lt;/a&gt;, so jQuery seemed like a good starting point!&lt;/p&gt;
+
+&lt;p&gt;I’ve made 6 apps so far, I started with a very simple script which handled the cursor entering a large selection of square divs I had created manually by copy-pasting HTML elements.  I ended the week with an app which uses a wrapper library on top of jQuery to automate the generation and animation of 1000 divs, I’m quite happy with that progression.  Along the way, I’ve been re-learning the basic concepts of Javascript and learning a lot more about jQuery, as well as little tips and tricks I hadn’t heard before.&lt;/p&gt;
+
+&lt;p&gt;The first of these tips was to use CDNs (Content Delivery Networks) to host my Javascript libraries. I found &lt;a href=&quot;http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/&quot;&gt;this interesting post&lt;/a&gt; which extolled the virtues of letting &lt;a href=&quot;https://developers.google.com/speed/libraries/&quot;&gt;Google host your libraries for you&lt;/a&gt;.  Adding the little tag pointing to the hosts library, rather than a copy I am hosting, results in faster loading times, cross-site caching and when I get around to using them; benefits when using AJAX calls.&lt;/p&gt;
+
+&lt;p&gt;The other tips and tricks cropped up as I was reading through the jQuery documentation. Things like &lt;a href=&quot;http://learn.jquery.com/performance/append-outside-loop/&quot;&gt;appending outside of loops&lt;/a&gt; to increase performance and reduce computationally costly DOM insertion.  Or, using #ID and element selectors where ever possible, due to the fact that they are based on native DOM operations, which reduce search space that using attribute or pseudo might entail.&lt;/p&gt;
+
+&lt;p&gt;Over the next week I plan to expand my usage of underscore and put out some more complex jQuery apps.  I’ve also found a &lt;a href=&quot;https://github.com/VincentGarreau/particles.js/&quot;&gt;cool library&lt;/a&gt; for making particles I’d like to try out, so one of the week’s apps will probably involve that (although I will be forced to host it myself!).&lt;/p&gt;
+
+&lt;p&gt;Hours logged: 12.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 07 May 2015 16:45:21 +0100</pubDate>
+        <link>http://yourdomain.com/week-1</link>
+        <guid isPermaLink="true">http://yourdomain.com/week-1</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>Existing Javascript</title>
+        <description>&lt;p&gt;sdad&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 May 2015 00:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/2015/05/07/existing-javascript.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/05/07/existing-javascript.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Hake Blog v2.0</title>
