@@ -170,7 +170,21 @@ pre {
     }
 }
 
+/* 
+Sidebar */
+#side-bar {
+    float: left;
+    width: 20%;
+    background-color: #ccc;
+}
 
+/* Page Content */
+
+#content-main {
+    float: right;
+    width: 75%;
+    padding: 20px;
+}
 
 /**
  * Clearfix
