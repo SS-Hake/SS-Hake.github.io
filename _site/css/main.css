@@ -168,8 +168,7 @@ pre {
 Sidebar */
 #side-bar {
   float: left;
-  width: 20%;
-  background-color: #ccc; }
+  width: 20%; }
 
 /* Page Content */
 #content-main {
