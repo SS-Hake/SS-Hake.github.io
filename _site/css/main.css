@@ -174,7 +174,8 @@ Sidebar */
 #content-main {
   float: right;
   width: 75%;
-  padding: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 /**
  * Clearfix
