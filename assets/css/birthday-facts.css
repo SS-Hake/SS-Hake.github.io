@@ -1,0 +1,54 @@
+/*title */
+
+h4 {
+	padding: 20px 0 15px;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.7;
+	color: #333333;
+
+}
+
+/*form*/
+form {
+	margin: 20px 0 30px;
+}
+
+input {
+	border: solid 1px #ccc;
+	margin: 0 20px 0 5px;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: none;
+	background-color: #fffdfa;
+	
+}
+
+/*button*/
+.button {
+	height: 34px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	background-color: #7893fd;
+	color: black;
+	cursor: pointer;
+
+	box-shadow: -1px 0 0 #5f7ffd, 0 1px 0 #466bfd,
+				-2px 1px 0 #5f7ffd, -1px 2px 0 #466bfd,
+			    -2px 2px 2px rgba(0,0,0,0.8);
+}
+
+.button:active {
+	box-shadow: -1px 1px 2px rgba(0,0,0,0.2) inset;
+	background-color: #6e8afc;
+}
+
+/* lists of data */
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 12px 0;
+	-webkit-margin-after: 1.33em;
+}
