@@ -8,12 +8,12 @@
 
   <link rel="icon" type="image/png" href="../favicon.png">
 
-  <title>Week 1</title>
-  <meta name="description" content="First published: 18/04/15.">
+  <title>Animator</title>
+  <meta name="description" content="">
 
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/week-1">
+  <link rel="canonical" href="http://yourdomain.com/animator">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
 
 </head>
@@ -158,26 +158,23 @@
         <div class="post">
 
   <div class="post-header">
-    <h1 class="post-title">Week 1</h1>
-    <p class="post-meta">May 7, 2015</p>
+    <h1 class="post-title">Animator</h1>
+    <p class="post-meta">Apr 10, 2015</p>
   </div>
 
   <article class="post-content">
-    <p>First published: 18/04/15.</p>
-
-<p>So, it’s the end of my first week.  I wanted to spend this week getting used to web development again, creating a few apps which just selected some elements and did something with them. The most basic concept of jQuery is to <a href="http://learn.jquery.com/using-jquery-core/selecting-elements/">“select some elements and do something with them”</a>, so jQuery seemed like a good starting point!</p>
-
-<p>I’ve made 6 apps so far, I started with a very simple script which handled the cursor entering a large selection of square divs I had created manually by copy-pasting HTML elements.  I ended the week with an app which uses a wrapper library on top of jQuery to automate the generation and animation of 1000 divs, I’m quite happy with that progression.  Along the way, I’ve been re-learning the basic concepts of Javascript and learning a lot more about jQuery, as well as little tips and tricks I hadn’t heard before.</p>
-
-<p>The first of these tips was to use CDNs (Content Delivery Networks) to host my Javascript libraries. I found <a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/">this interesting post</a> which extolled the virtues of letting <a href="https://developers.google.com/speed/libraries/">Google host your libraries for you</a>.  Adding the little tag pointing to the hosts library, rather than a copy I am hosting, results in faster loading times, cross-site caching and when I get around to using them; benefits when using AJAX calls.</p>
-
-<p>The other tips and tricks cropped up as I was reading through the jQuery documentation. Things like <a href="http://learn.jquery.com/performance/append-outside-loop/">appending outside of loops</a> to increase performance and reduce computationally costly DOM insertion.  Or, using #ID and element selectors where ever possible, due to the fact that they are based on native DOM operations, which reduce search space that using attribute or pseudo might entail.</p>
-
-<p>Over the next week I plan to expand my usage of underscore and put out some more complex jQuery apps.  I’ve also found a <a href="https://github.com/VincentGarreau/particles.js/">cool library</a> for making particles I’d like to try out, so one of the week’s apps will probably involve that (although I will be forced to host it myself!).</p>
-
-<p>Hours logged: 12.</p>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../assets/javascript/animator.js"></script>
+<link rel="stylesheet" href="../assets/css/animator.css">
 
 
+<div id="box_container">
+	<div class="box" id="blue"></div>
+	<div class="box" id="green"></div>
+	<div class="box" id="red"></div>
+	<div class="box" id="yellow"></div>
+
+</div>
   </article>
 
 </div>

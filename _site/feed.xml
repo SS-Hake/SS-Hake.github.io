@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 May 2015 14:41:22 +0100</pubDate>
-    <lastBuildDate>Fri, 08 May 2015 14:41:22 +0100</lastBuildDate>
+    <pubDate>Fri, 08 May 2015 15:08:54 +0100</pubDate>
+    <lastBuildDate>Fri, 08 May 2015 15:08:54 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -89,66 +89,93 @@
       </item>
     
       <item>
-        <title>Projects</title>
-        <description>&lt;div id=&quot;site_list_wrapper&quot;&gt;
-	&lt;h4&gt;Week 1&lt;/h4&gt;
-	&lt;ul&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 08/04/15 &lt;/span&gt; &lt;a href=&quot;/squares&quot;&gt;Squares&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 09/04/15 &lt;/span&gt; &lt;a href=&quot;pages/daycount.html&quot;&gt;Day Counter&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 10/04/15 &lt;/span&gt; &lt;a href=&quot;pages/animator.html&quot;&gt;Animated Boxes&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 14/04/15 &lt;/span&gt; &lt;a href=&quot;pages/birthdayFacts.html&quot;&gt;Birthday Facts&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 16/04/15 &lt;/span&gt; &lt;a href=&quot;pages/colourClock.html&quot;&gt;Colour Clock&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 17/04/15 &lt;/span&gt; &lt;a href=&quot;pages/waveSquares.html&quot;&gt;Blinking Squares&lt;/a&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;h4&gt;Week 2&lt;/h4&gt;
-	&lt;ul&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 20/04/15 &lt;/span&gt; &lt;a href=&quot;pages/throwSquares.html&quot;&gt;Throwing squares&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 21/04/15 &lt;/span&gt; &lt;a href=&quot;pages/snake.html&quot;&gt;Snake&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 23/04/15 &lt;/span&gt; &lt;a href=&quot;pages/canvasClock.html&quot;&gt;Canvas Clock&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 23.5/04/15 &lt;/span&gt; &lt;a href=&quot;pages/particlesTest.html&quot;&gt;Particles Test&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;span class=&quot;item&quot;&gt; 24/04/15 &lt;/span&gt; &lt;a href=&quot;pages/angularTest.html&quot;&gt;Angular Test&lt;/a&gt;
-		&lt;/li&gt;
+        <title>Animator</title>
+        <description>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../assets/javascript/animator.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/animator.css&quot;&gt;
 
-	&lt;/ul&gt;
 
-	&lt;h4&gt;Ongoing projects&lt;/h4&gt;
-	&lt;ul&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;/pages/twilight.html&quot;&gt;Twilight.js&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
+&lt;div id=&quot;box_container&quot;&gt;
+	&lt;div class=&quot;box&quot; id=&quot;blue&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;box&quot; id=&quot;green&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;box&quot; id=&quot;red&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;box&quot; id=&quot;yellow&quot;&gt;&lt;/div&gt;
 
-		&lt;/li&gt;
-		
-	&lt;/ul&gt;
 &lt;/div&gt;</description>
-        <pubDate>Wed, 08 Apr 2015 16:45:21 +0100</pubDate>
-        <link>http://yourdomain.com/projects</link>
-        <guid isPermaLink="true">http://yourdomain.com/projects</guid>
+        <pubDate>Fri, 10 Apr 2015 16:45:21 +0100</pubDate>
+        <link>http://yourdomain.com/animator</link>
+        <guid isPermaLink="true">http://yourdomain.com/animator</guid>
         
         
-        <category>test</category>
+        <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Day Counter</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/day-counter.css&quot;&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../assets/javascript/day-counter.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;div id=&quot;tab_container&quot;&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;0&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			S u n
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;1&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			M o n
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;2&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			T u e
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;3&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			W e d
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;4&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			T h u
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;5&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			F r i
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;day&quot; id=&quot;6&quot;&gt;
+		&lt;div class=&quot;dayName&quot;&gt;
+			S a t
+		&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class=&quot;clear&quot;&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;message&quot;&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 16:45:21 +0100</pubDate>
+        <link>http://yourdomain.com/day-counter</link>
+        <guid isPermaLink="true">http://yourdomain.com/day-counter</guid>
+        
+        
+        <category>projects</category>
         
       </item>
     
@@ -488,12 +515,76 @@
 		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</description>
-        <pubDate>Sat, 01 Jan 2000 15:45:21 +0000</pubDate>
+        <pubDate>Wed, 08 Apr 2015 16:45:21 +0100</pubDate>
         <link>http://yourdomain.com/squares</link>
         <guid isPermaLink="true">http://yourdomain.com/squares</guid>
         
         
         <category>projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Projects</title>
+        <description>&lt;div id=&quot;site_list_wrapper&quot;&gt;
+	&lt;h4&gt;Week 1&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 08/04/15 &lt;/span&gt; &lt;a href=&quot;/squares&quot;&gt;Squares&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 09/04/15 &lt;/span&gt; &lt;a href=&quot;/day-counter&quot;&gt;Day Counter&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 10/04/15 &lt;/span&gt; &lt;a href=&quot;/animator&quot;&gt;Animated Boxes&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 14/04/15 &lt;/span&gt; &lt;a href=&quot;/birthday-facts&quot;&gt;Birthday Facts&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 16/04/15 &lt;/span&gt; &lt;a href=&quot;pages/colourClock.html&quot;&gt;Colour Clock&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 17/04/15 &lt;/span&gt; &lt;a href=&quot;pages/waveSquares.html&quot;&gt;Blinking Squares&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;h4&gt;Week 2&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 20/04/15 &lt;/span&gt; &lt;a href=&quot;pages/throwSquares.html&quot;&gt;Throwing squares&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 21/04/15 &lt;/span&gt; &lt;a href=&quot;pages/snake.html&quot;&gt;Snake&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 23/04/15 &lt;/span&gt; &lt;a href=&quot;pages/canvasClock.html&quot;&gt;Canvas Clock&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 23.5/04/15 &lt;/span&gt; &lt;a href=&quot;pages/particlesTest.html&quot;&gt;Particles Test&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span class=&quot;item&quot;&gt; 24/04/15 &lt;/span&gt; &lt;a href=&quot;pages/angularTest.html&quot;&gt;Angular Test&lt;/a&gt;
+		&lt;/li&gt;
+
+	&lt;/ul&gt;
+
+	&lt;h4&gt;Ongoing projects&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;/pages/twilight.html&quot;&gt;Twilight.js&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+
+		&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;</description>
+        <pubDate>Wed, 08 Apr 2015 16:45:21 +0100</pubDate>
+        <link>http://yourdomain.com/projects</link>
+        <guid isPermaLink="true">http://yourdomain.com/projects</guid>
+        
+        
+        <category>test</category>
         
       </item>
     

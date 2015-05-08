@@ -1,0 +1,57 @@
+#tab_container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.day {
+	position: relative;
+	float: left;
+	background-color: #004304;
+	height: 100px;
+	width: 100px;
+}
+
+.dayName {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 22px;
+	color: #f39c12;
+}
+
+#today {
+	height: 100px;
+	background-color: #54a759;
+
+	box-shadow: -3px 0 0 rgba(0,0,0,0.3);
+	
+}
+
+#today .dayName {
+	font-size: 30px;
+	font-weight: bold;
+	color: #f6f8f8;
+	text-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.clear {
+	clear: both;
+}
+
+#message{
+	padding: 50px;
+	font-size: 40px;
+	color: #f6f8f8;
+	background-color: #86c98a;
+	text-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+
+	box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+
+}
+
+
+ 
+
+
+
+
