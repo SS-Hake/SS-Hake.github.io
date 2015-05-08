@@ -162,7 +162,8 @@ pre {
       max-width: -webkit-calc(1000px - (30px));
       max-width: calc(1000px - (30px));
       padding-right: 15px;
-      padding-left: 15px; } }
+      padding-left: 15px;
+      padding-top: 20px; } }
 
 /* 
 Sidebar */
