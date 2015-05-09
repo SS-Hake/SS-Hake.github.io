@@ -19,7 +19,6 @@ $(document).ready(function () {
     ctx.strokeStyle = "black";
     ctx.strokeRect(0, 0, width, height);
 
-
     var PlaneL = function() {
         this.xCoord = 0;
         this.yCoord = 0;
@@ -315,8 +314,8 @@ $(document).ready(function () {
         SatRight.move();
         SatRight.draw();
 
-        ShootStar.move();
-        ShootStar.draw();
+        //ShootStar.move();
+        //ShootStar.draw();
 
 
 	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
