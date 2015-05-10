@@ -32,12 +32,6 @@ layout: default
       Check back often, as I will be updating the site with new pages as regularly as I can while still completing university work.
       (I'm aiming for a new page every two days!)
     </p>
-    {% for page in site.pages  limit:10 %}
-        <li>
-            <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            gg
-        </li>
-    {% endfor %}
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </div>
