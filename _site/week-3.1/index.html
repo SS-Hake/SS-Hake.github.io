@@ -8,12 +8,12 @@
 
   <link rel="icon" type="image/png" href="../favicon.png">
 
-  <title>Blinking Squares</title>
-  <meta name="description" content="">
+  <title>Week 3.5</title>
+  <meta name="description" content="I&#8217;ve finished the majority of the portfolio site I have been working on.  As I finish it off I will host it over at [BuntingfordComputing.co.uk][buntin...">
 
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/blinking-squares">
+  <link rel="canonical" href="http://yourdomain.com/week-3.1">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
 
 </head>
@@ -171,22 +171,27 @@
         <div class="post">
 
   <div class="post-header">
-    <h1 class="post-title">Blinking Squares</h1>
-    <p class="post-meta">Apr 17, 2015</p>
+    <h1 class="post-title">Week 3.5</h1>
+    <p class="post-meta">May 17, 2015</p>
   </div>
 
   <article class="post-content">
-    <link rel="stylesheet" type="text/css" href="../assets/css/blinking-squares.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="../assets/javascript/blinking-squares.js"></script>
+    <p>I’ve finished the majority of the portfolio site I have been working on.  As I finish it off I will host it over at [BuntingfordComputing.co.uk][buntingfordcomputing.co.uk], the domain and host I use as a test bed for new sites I create.</p>
 
-<div id="content">
-	<div id="square_container">
+<p>It’s set up as a single page app, which utilises some simple jQuery AJAX calls to display the extra information the user requests (specific project and client info).  The site uses SASS and the SASS extension Bourbon for styling, which has been a lot easier to use than css, especially when it comes to animations and the +clearfix function!  I will definitely use SASS whenever I can in the future.</p>
 
+<p>I’m trying to focus on quantity rather than quality up to a point with this Jekyll sites.  So I am going to finish this one up and establish some areas which are lacking, before moving on to a new site.</p>
 
-	</div>
-</div>
+<p>The main areas which are weak in this portfolio site are:</p>
+
+<ul>
+  <li>Positioning of SVG elements, such as the logos (which I just cut in the end) and the emblems for the youtube page and website.  I just couldn’t get the absolute positioning to work, the SVG elements just dissapeared when I used it.</li>
+  <li>Using 3rd party content such as animations from [BounceJS][http://bouncejs.com/] or textures from [MakerBook][http://makerbook.net/].  I kept the animations preliminarily css and stock jQuery this time to keep my finish time down to ao minumum.</li>
+  <li>Creating and using proper Bourbon mix-ins to save my recoding time. For instance, creating a mixin for the default font size/colour/weight.</li>
+  <li>Properly utilising liquid script’s loops and logic to simplifiy my HTML.</li>
+  <li>The yml settings file.  I need to allow more settings to be set here and accessed with liquid in the markup.</li>
+</ul>
+
   </article>
 
 </div>
