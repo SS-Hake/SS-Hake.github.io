@@ -187,13 +187,42 @@
 		    	<em class="pull-right">[[ product.price | currency ]]</em>
 			</h3>
 			<button ng-show="product.canPurchase">Add to cart</button>
-			<div class="gallery">
-	        	<img ng-src="[[ product.images[0] ]]"/>
-        	</div>
+			<div class="gallery" ng-show="product.images.length">
+	        	<img class="img img-circle img-thumbnail center-block"  ng-src="[[ product.images[0] ]]"/>
+        	
+	        	<ul class="img-thumbnails clearfix">
+			        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+			            <img ng-src="[[image]]" />
+		        	</li>
+		        </ul>
+	        </div>
+
+	        <section class="tab" ng-controller="TabController as tabController">
+		        <ul class="nav nav-pills">
+			    	<li ng-class="{ active: tabController.isSet(1) }">
+			    		<a href="" ng-click="tabController.setTab(1)">Description</a></li>
+			    	<li ng-class="{ active: tabController.isSet(2) }">
+			    		<a href="" ng-click="tabController.setTab(2)">Specs</a></li>
+			    	<li ng-class="{ active: tabController.isSet(3) }">
+			        	<a href="" ng-click="tabController.setTab(3)">Reviews</a></li>
+			    </ul>
+			    <div ng-show="tabController.isSet(1)">
+			    	<h4>Description</h4>
+			    	<blockquote>[[ product.description ]]</blockquote>
+			    </div>
+			    <div ng-show="tabController.isSet(2)">
+			    	<h4>Specs</h4>
+			    	<blockquote>Shine: [[ product.shine ]]</blockquote>
+			    </div>
+			    <div ng-show="tabController.isSet(3)">
+			    	<h4>Reviews</h4>
+			    	<blockquote></blockquote>
+			    </div>
+      		</section>
+
 		</div>
 	</div>
 </div>
-
 
   </article>
 

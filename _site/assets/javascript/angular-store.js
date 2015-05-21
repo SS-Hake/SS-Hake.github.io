@@ -34,6 +34,18 @@ Pipes in directives can format data to date, time, currency etc.
 		this.products = gems;
 	});
 
+  app.controller('TabController', function() {
+    this.tab = 1;
+    
+    this.setTab = function(selected) {
+      this.tab = selected;
+     };
+    
+    this.isSet = function(tabVal) {
+      return this.tab === tabVal;
+    };
+  });
+  
 	var gems = [{
       name: 'Azurite',
       description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
