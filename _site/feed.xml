@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 May 2015 15:29:03 +0100</pubDate>
-    <lastBuildDate>Thu, 21 May 2015 15:29:03 +0100</lastBuildDate>
+    <pubDate>Thu, 21 May 2015 18:36:58 +0100</pubDate>
+    <lastBuildDate>Thu, 21 May 2015 18:36:58 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -34,7 +34,10 @@
 		        &lt;/ul&gt;
 	        &lt;/div&gt;
 
+	        &lt;!-- Start the tab section. --&gt;
 	        &lt;section class=&quot;tab&quot; ng-controller=&quot;TabController as tabController&quot;&gt;
+		        
+		        &lt;!-- Display tabs with product information listed using directives. --&gt;
 		        &lt;ul class=&quot;nav nav-pills&quot;&gt;
 			    	&lt;li ng-class=&quot;{ active: tabController.isSet(1) }&quot;&gt;
 			    		&lt;a href=&quot;&quot; ng-click=&quot;tabController.setTab(1)&quot;&gt;Description&lt;/a&gt;&lt;/li&gt;
@@ -43,17 +46,64 @@
 			    	&lt;li ng-class=&quot;{ active: tabController.isSet(3) }&quot;&gt;
 			        	&lt;a href=&quot;&quot; ng-click=&quot;tabController.setTab(3)&quot;&gt;Reviews&lt;/a&gt;&lt;/li&gt;
 			    &lt;/ul&gt;
+
+			    &lt;!-- Display some attributes of the product when the tabs are clicked. --&gt;
+			    &lt;!-- Display the product description. --&gt;
 			    &lt;div ng-show=&quot;tabController.isSet(1)&quot;&gt;
 			    	&lt;h4&gt;Description&lt;/h4&gt;
 			    	&lt;blockquote&gt;[[ product.description ]]&lt;/blockquote&gt;
 			    &lt;/div&gt;
+
+			    &lt;!-- Display the shine value of the product. --&gt;
 			    &lt;div ng-show=&quot;tabController.isSet(2)&quot;&gt;
 			    	&lt;h4&gt;Specs&lt;/h4&gt;
 			    	&lt;blockquote&gt;Shine: [[ product.shine ]]&lt;/blockquote&gt;
 			    &lt;/div&gt;
+
+		    	&lt;!-- Display the reviews of previous customers. --&gt;
 			    &lt;div ng-show=&quot;tabController.isSet(3)&quot;&gt;
-			    	&lt;h4&gt;Reviews&lt;/h4&gt;
-			    	&lt;blockquote&gt;&lt;/blockquote&gt;
+			    	&lt;ul&gt;
+            			&lt;h4&gt;Reviews&lt;/h4&gt;
+            			&lt;!-- Simple loop through the reiviews - link the data from the loop &quot;review&quot; object. --&gt;
+            			&lt;li ng-repeat=&quot;review in product.reviews&quot;&gt;
+            				&lt;blockquote&gt;
+                				&lt;strong&gt;[[ review.stars ]] Stars&lt;/strong&gt;
+                  				[[ review.body ]]
+                				&lt;cite class=&quot;clearfix&quot;&gt;—[[ review.author ]]&lt;/cite&gt;
+                			&lt;/blockquote&gt;
+              			&lt;/li&gt;
+            		&lt;/ul&gt;
+ 
+            		&lt;!--Within this form, import the review controller and add the submit function, which will push
+            		the new review onto the reviews array. --&gt;
+	            	&lt;form name=&quot;reviewForm&quot; ng-controller=&quot;ReviewController as reviewCtrl&quot;
+	            		ng-submit=&quot;reviewCtrl.addReview(product)&quot;&gt;
+	            		&lt;!--  Review submit form with live preview using ng-model to link data. --&gt;
+		            	&lt;!--  Live Preview --&gt;
+		            	&lt;h4&gt;Preview:&lt;/h4&gt;
+			            &lt;blockquote&gt;
+			            	&lt;strong&gt;[[reviewCtrl.review.stars]] Stars&lt;/strong&gt;
+			                [[reviewCtrl.review.body]]
+			                &lt;cite class=&quot;clearfix&quot;&gt;—[[reviewCtrl.review.author]]&lt;/cite&gt;
+		            	&lt;/blockquote&gt;
+
+		            	&lt;!-- The model is prefixed with the reviewCtrl controller, which handles the pushing. --&gt;
+			            &lt;h4&gt;Submit a Review&lt;/h4&gt;
+			            &lt;fieldset class=&quot;form-group&quot;&gt;
+			            	&lt;select ng-model=&quot;reviewCtrl.review.stars&quot; class=&quot;form-control&quot; ng-options=&quot;stars for stars in [5,4,3,2,1]&quot;	title=&quot;Stars&quot;&gt;
+			                	&lt;option value=&quot;&quot;&gt;Rate the Product&lt;/option&gt;
+			                &lt;/select&gt;
+			            &lt;/fieldset&gt;
+			            &lt;fieldset class=&quot;form-group&quot;&gt;
+			                &lt;textarea ng-model=&quot;reviewCtrl.review.body&quot; class=&quot;form-control&quot; placeholder=&quot;Write a short review of the product...&quot; title=&quot;Review&quot;&gt;&lt;/textarea&gt;
+			            &lt;/fieldset&gt;
+			            &lt;fieldset class=&quot;form-group&quot;&gt;
+			                &lt;input ng-model=&quot;reviewCtrl.review.author&quot; type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;jimmyDean@example.org&quot; title=&quot;Email&quot; /&gt;
+			            &lt;/fieldset&gt;
+			            &lt;fieldset class=&quot;form-group&quot;&gt;
+			                &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary pull-right&quot; value=&quot;Submit Review&quot; /&gt;
+			            &lt;/fieldset&gt;
+		            &lt;/form&gt;
 			    &lt;/div&gt;
       		&lt;/section&gt;
 

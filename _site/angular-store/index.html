@@ -197,7 +197,10 @@
 		        </ul>
 	        </div>
 
+	        <!-- Start the tab section. -->
 	        <section class="tab" ng-controller="TabController as tabController">
+		        
+		        <!-- Display tabs with product information listed using directives. -->
 		        <ul class="nav nav-pills">
 			    	<li ng-class="{ active: tabController.isSet(1) }">
 			    		<a href="" ng-click="tabController.setTab(1)">Description</a></li>
@@ -206,17 +209,64 @@
 			    	<li ng-class="{ active: tabController.isSet(3) }">
 			        	<a href="" ng-click="tabController.setTab(3)">Reviews</a></li>
 			    </ul>
+
+			    <!-- Display some attributes of the product when the tabs are clicked. -->
+			    <!-- Display the product description. -->
 			    <div ng-show="tabController.isSet(1)">
 			    	<h4>Description</h4>
 			    	<blockquote>[[ product.description ]]</blockquote>
 			    </div>
+
+			    <!-- Display the shine value of the product. -->
 			    <div ng-show="tabController.isSet(2)">
 			    	<h4>Specs</h4>
 			    	<blockquote>Shine: [[ product.shine ]]</blockquote>
 			    </div>
+
+		    	<!-- Display the reviews of previous customers. -->
 			    <div ng-show="tabController.isSet(3)">
-			    	<h4>Reviews</h4>
-			    	<blockquote></blockquote>
+			    	<ul>
+            			<h4>Reviews</h4>
+            			<!-- Simple loop through the reiviews - link the data from the loop "review" object. -->
+            			<li ng-repeat="review in product.reviews">
+            				<blockquote>
+                				<strong>[[ review.stars ]] Stars</strong>
+                  				[[ review.body ]]
+                				<cite class="clearfix">—[[ review.author ]]</cite>
+                			</blockquote>
+              			</li>
+            		</ul>
+ 
+            		<!--Within this form, import the review controller and add the submit function, which will push
+            		the new review onto the reviews array. -->
+	            	<form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
+	            		ng-submit="reviewCtrl.addReview(product)">
+	            		<!--  Review submit form with live preview using ng-model to link data. -->
+		            	<!--  Live Preview -->
+		            	<h4>Preview:</h4>
+			            <blockquote>
+			            	<strong>[[reviewCtrl.review.stars]] Stars</strong>
+			                [[reviewCtrl.review.body]]
+			                <cite class="clearfix">—[[reviewCtrl.review.author]]</cite>
+		            	</blockquote>
+
+		            	<!-- The model is prefixed with the reviewCtrl controller, which handles the pushing. -->
+			            <h4>Submit a Review</h4>
+			            <fieldset class="form-group">
+			            	<select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]"	title="Stars">
+			                	<option value="">Rate the Product</option>
+			                </select>
+			            </fieldset>
+			            <fieldset class="form-group">
+			                <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
+			            </fieldset>
+			            <fieldset class="form-group">
+			                <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
+			            </fieldset>
+			            <fieldset class="form-group">
+			                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+			            </fieldset>
+		            </form>
 			    </div>
       		</section>
 
