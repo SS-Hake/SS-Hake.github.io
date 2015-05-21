@@ -17,7 +17,7 @@ Later in the week I will move back to the design aspect and complete a few tutor
 On the backburner I need to work out how to properly host a ruby on rails app with cPanel.  It's a bit ridiculous that I can now create a fully function ruby on rails application, but I can't host it on anything other than the painfully slow heroku free service.  I must be overthinking it because I know it can be done, I just havent read enough yet... Once I get it up and running on my faster server, I'll be able to get my teeth into persistent data and much more interesting apps.
 
 ##Checklist for the week of 18/5/2015
-* Host the portfolio site
-* Basic Angular store app
+* ~~Host the portfolio site~~
+* ~~Basic Angular store app~~  looks terrible, but works! Need to fix the css
 * More complex sass Jekyll site
 * Host RoR apps with cPanel

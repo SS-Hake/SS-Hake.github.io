@@ -1,6 +1,10 @@
 /*Simple angular store app listing data from array variables in the js.
 
 Directives are html tags which can trigger angular logic within the page.
+	As well as expressing UI.
+	Calling events or event handlers.
+	Creating and using snippets of code like in the sass/bourbon project I was doing previously.
+		There snippets provide more readable HTML.  
 
 Modules are the housing for the components of the Angular app.
 
