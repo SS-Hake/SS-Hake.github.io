@@ -4,6 +4,11 @@ $(document).ready(function () {
     //Generate random rates for plane travel
     //Generate random start points for plane.
     //shooting star random start and end points.
+
+
+    //Add colour functionality - Morning, besnine early morning phot
+    //Transition through midday - white and deep blue
+    //then evening, whatI have drarker blue purpoe and deep reds
 	console.log("[+] Drawing canvas...");
 
 	var canvas = $('#canvas')[0];

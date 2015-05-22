@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 May 2015 22:26:13 +0100</pubDate>
-    <lastBuildDate>Thu, 21 May 2015 22:26:13 +0100</lastBuildDate>
+    <pubDate>Fri, 22 May 2015 16:41:39 +0100</pubDate>
+    <lastBuildDate>Fri, 22 May 2015 16:41:39 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -129,8 +129,8 @@ Fully commented js is in the angular-store.js file linked below.
       </item>
     
       <item>
-        <title>Week 3.5</title>
-        <description>&lt;p&gt;I’ve finished the majority of the portfolio site I have been working on.  As I finish it off I will host it over at [BuntingfordComputing.co.uk][buntingfordcomputing.co.uk], the domain and host I use as a test bed for new sites I create.&lt;/p&gt;
+        <title>Week 3.1</title>
+        <description>&lt;p&gt;I’ve finished the majority of the portfolio site I have been working on.  As I finish it off I will host it over at &lt;a href=&quot;http://buntingfordcomputing.co.uk&quot;&gt;BuntingfordComputing.co.uk&lt;/a&gt;, the domain and host I use as a test bed for new sites I create.&lt;/p&gt;
 
 &lt;p&gt;It’s set up as a single page app, which utilises some simple jQuery AJAX calls to display the extra information the user requests (specific project and client info).  The site uses SASS and the SASS extension Bourbon for styling, which has been a lot easier to use than css, especially when it comes to animations and the +clearfix function!  I will definitely use SASS whenever I can in the future.&lt;/p&gt;
 
@@ -140,11 +140,12 @@ Fully commented js is in the angular-store.js file linked below.
 
 &lt;ul&gt;
   &lt;li&gt;Positioning of SVG elements, such as the logos (which I just cut in the end) and the emblems for the youtube page and website.  I just couldn’t get the absolute positioning to work, the SVG elements just dissapeared when I used it.&lt;/li&gt;
-  &lt;li&gt;Using 3rd party content such as animations from [BounceJS][http://bouncejs.com/] or textures from [MakerBook][http://makerbook.net/].  I kept the animations preliminarily css and stock jQuery this time to keep my finish time down to ao minumum.&lt;/li&gt;
+  &lt;li&gt;Using 3rd party content such as animations from &lt;a href=&quot;http://bouncejs.com/&quot;&gt;BounceJS&lt;/a&gt; or textures from &lt;a href=&quot;http://makerbook.net/&quot;&gt;MakerBook&lt;/a&gt;.  I kept the animations preliminarily css and stock jQuery this time to keep my finish time down to ao minumum.&lt;/li&gt;
   &lt;li&gt;Creating and using proper Bourbon mix-ins to save my recoding time. For instance, creating a mixin for the default font size/colour/weight.&lt;/li&gt;
   &lt;li&gt;Properly utilising liquid script’s loops and logic to simplifiy my HTML.&lt;/li&gt;
   &lt;li&gt;The yml settings file.  I need to allow more settings to be set here and accessed with liquid in the markup.&lt;/li&gt;
 &lt;/ul&gt;
+
 </description>
         <pubDate>Sun, 17 May 2015 16:46:21 +0100</pubDate>
         <link>http://yourdomain.com/week-3.1</link>
@@ -169,10 +170,19 @@ Fully commented js is in the angular-store.js file linked below.
 
 &lt;h2 id=&quot;checklist-for-the-week-of-1852015&quot;&gt;Checklist for the week of 18/5/2015&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;~~Host the portfolio site~~&lt;/li&gt;
-  &lt;li&gt;Basic Angular store app&lt;/li&gt;
-  &lt;li&gt;More complex sass Jekyll site&lt;/li&gt;
-  &lt;li&gt;Host RoR apps with cPanel&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Host the portfolio site&lt;/s&gt;
+    &lt;p&gt;– 19/05/15&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Basic Angular store app&lt;/s&gt;
+    &lt;p&gt;– 20/05/15 looks terrible, but works! Need to fix the css&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;More complex sass Jekyll site – Have added functionality to the first site - will work on TT next.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Host RoR apps with cPanel&lt;/s&gt;
+    &lt;p&gt;– 21/05/15&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 16 May 2015 16:46:21 +0100</pubDate>
