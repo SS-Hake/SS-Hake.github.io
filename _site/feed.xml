@@ -6,9 +6,117 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 May 2015 20:34:28 +0100</pubDate>
-    <lastBuildDate>Fri, 22 May 2015 20:34:28 +0100</lastBuildDate>
+    <pubDate>Sat, 23 May 2015 17:06:20 +0100</pubDate>
+    <lastBuildDate>Sat, 23 May 2015 17:06:20 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>jQuery DOM traversal</title>
+        <description>&lt;p&gt;
+	Simple script which handles the actions of tabs; displaying the correct panels with the correct
+	information at the approproate time.  Utilising scaling properly, to select the nearest, correct panels
+	rather than searching the entire DOM for the correct element.
+	&lt;br&gt;
+	&lt;br&gt;
+	Also my first time using html tags other than ids and classes to identify elements.  In this case 'rel's.
+	&lt;br&gt;
+	&lt;br&gt;
+	Full comments in the jquery-tabs js file.
+&lt;/p&gt;
+
+&lt;link href=&quot;../assets/css/jquery-tabs.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;../assets/javascript/jquery-tabs.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;tab-panels&quot;&gt;
+      &lt;ul class=&quot;tabs&quot;&gt;
+        &lt;li rel=&quot;panel1&quot; class=&quot;active&quot;&gt;panel1&lt;/li&gt;
+        &lt;li rel=&quot;panel2&quot; &gt;panel2&lt;/li&gt;
+        &lt;li rel=&quot;panel3&quot; &gt;panel3&lt;/li&gt;
+        &lt;li rel=&quot;panel4&quot; &gt;panel4&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;div id=&quot;panel1&quot; class=&quot;panel active&quot;&gt;
+        content1&lt;br&gt;
+        content1&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content1&lt;br&gt;
+        content1&lt;br&gt;
+      &lt;/div&gt;
+      
+      &lt;div id=&quot;panel2&quot; class=&quot;panel&quot;&gt;
+        content2&lt;br&gt;
+        content2&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content2&lt;br&gt;
+        content2&lt;br&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&quot;panel3&quot; class=&quot;panel&quot;&gt;
+        content3&lt;br&gt;
+        content3&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content3&lt;br&gt;
+        content3&lt;br&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&quot;panel4&quot; class=&quot;panel&quot;&gt;
+        content4&lt;br&gt;
+        content4&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content4&lt;br&gt;
+        content4&lt;br&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+
+&lt;div class=&quot;tab-panels&quot;&gt;
+      &lt;ul class=&quot;tabs&quot;&gt;
+        &lt;li rel=&quot;panel5&quot; class=&quot;active&quot;&gt;panel5&lt;/li&gt;
+        &lt;li rel=&quot;panel6&quot; &gt;panel6&lt;/li&gt;
+        &lt;li rel=&quot;panel7&quot; &gt;panel7&lt;/li&gt;
+        &lt;li rel=&quot;panel8&quot; &gt;panel8&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;div id=&quot;panel5&quot; class=&quot;panel active&quot;&gt;
+        content5&lt;br&gt;
+        content5&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content5&lt;br&gt;
+        content5&lt;br&gt;
+      &lt;/div&gt;
+      
+      &lt;div id=&quot;panel6&quot; class=&quot;panel&quot;&gt;
+        content6&lt;br&gt;
+        content6&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content6&lt;br&gt;
+        content6&lt;br&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&quot;panel7&quot; class=&quot;panel&quot;&gt;
+        content7&lt;br&gt;
+        content7&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content7&lt;br&gt;
+        content7&lt;br&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&quot;panel8&quot; class=&quot;panel&quot;&gt;
+        content8&lt;br&gt;
+        content8&lt;br&gt;
+        Content Changed!&lt;br&gt;
+        content8&lt;br&gt;
+        content8&lt;br&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;</description>
+        <pubDate>Sat, 23 May 2015 16:45:21 +0100</pubDate>
+        <link>http://yourdomain.com/dom-traversal</link>
+        <guid isPermaLink="true">http://yourdomain.com/dom-traversal</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
     
       <item>
         <title>Angular Store</title>
@@ -331,27 +439,6 @@ Fully commented js is in the angular-store.js file linked below.
         <pubDate>Fri, 24 Apr 2015 16:45:21 +0100</pubDate>
         <link>http://yourdomain.com/particles-test</link>
         <guid isPermaLink="true">http://yourdomain.com/particles-test</guid>
-        
-        
-        <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Canvas Clock</title>
-        <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../assets/css/canvas-clock.css&quot;&gt;
-&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../assets/javascript/canvas-clock.js&quot;&gt;&lt;/script&gt;
-
-
-&lt;div id=&quot;content&quot;&gt;
-	&lt;canvas id=&quot;canvas&quot; height=&quot;550&quot; width=&quot;550&quot;&gt;
-
-	&lt;/canvas&gt;
-&lt;/div&gt;</description>
-        <pubDate>Thu, 23 Apr 2015 16:45:21 +0100</pubDate>
-        <link>http://yourdomain.com/canvas-clock</link>
-        <guid isPermaLink="true">http://yourdomain.com/canvas-clock</guid>
         
         
         <category>projects</category>

@@ -8,12 +8,11 @@
 
   <link rel="icon" type="image/png" href="../favicon.png">
 
-  <title>Hake Blog</title>
-  <meta name="description" content="Adventures in web design.
-">
+  <title>jQuery DOM traversal</title>
+  <meta name="description" content="	Simple script which handles the actions of tabs; displaying the correct panels with the correct	information at the approproate time.  Utilising scaling prop...">
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/dom-traversal">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
 
 </head>
@@ -168,55 +167,112 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-
-  <div id="side-bar">
-    <h1 class="page-heading">Recent Posts</h1>
-    <ul class="post-list">
-      
-        <li>
-          <span class="post-meta">May 23, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/dom-traversal">jQuery DOM traversal</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 20, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/angular-store">Angular Store</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 17, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/week-3.1">Week 3.1</a>
-          </h2>
-        </li>
-      
-    </ul>
+  <div class="post-header">
+    <h1 class="post-title">jQuery DOM traversal</h1>
+    <p class="post-meta">May 23, 2015</p>
   </div>
 
-  <div id="content-main">
-    <h2>Current project: Web Design</h2>
+  <article class="post-content">
     <p>
-      I'm currently learning how to use a selection of javascript libraries beginning with <a href="http://jquery.com/">jQuery</a> before moving on to <a href="https://angularjs.org/">Angular.js</a>, <a href="http://threejs.org/">three.js</a> and <a href="https://nodejs.org/">Node.js</a>. 
-    </p>
-    <p>
-      <a href="/project-list">Here</a> is a list of pages showing some example projects.
-    </p>
-    <p>
-      Check back often, as I will be updating the site with new pages as regularly as I can while still completing university work.
-      (I'm aiming for a new page every two days!)
-    </p>
+	Simple script which handles the actions of tabs; displaying the correct panels with the correct
+	information at the approproate time.  Utilising scaling properly, to select the nearest, correct panels
+	rather than searching the entire DOM for the correct element.
+	<br>
+	<br>
+	Also my first time using html tags other than ids and classes to identify elements.  In this case 'rel's.
+	<br>
+	<br>
+	Full comments in the jquery-tabs js file.
+</p>
 
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-  </div>
+<link href="../assets/css/jquery-tabs.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/javascript/jquery-tabs.js"></script>
+
+<div class="tab-panels">
+      <ul class="tabs">
+        <li rel="panel1" class="active">panel1</li>
+        <li rel="panel2" >panel2</li>
+        <li rel="panel3" >panel3</li>
+        <li rel="panel4" >panel4</li>
+      </ul>
+
+      <div id="panel1" class="panel active">
+        content1<br>
+        content1<br>
+        Content Changed!<br>
+        content1<br>
+        content1<br>
+      </div>
+      
+      <div id="panel2" class="panel">
+        content2<br>
+        content2<br>
+        Content Changed!<br>
+        content2<br>
+        content2<br>
+      </div>
+
+      <div id="panel3" class="panel">
+        content3<br>
+        content3<br>
+        Content Changed!<br>
+        content3<br>
+        content3<br>
+      </div>
+
+      <div id="panel4" class="panel">
+        content4<br>
+        content4<br>
+        Content Changed!<br>
+        content4<br>
+        content4<br>
+      </div>      
+    </div>
+
+<div class="tab-panels">
+      <ul class="tabs">
+        <li rel="panel5" class="active">panel5</li>
+        <li rel="panel6" >panel6</li>
+        <li rel="panel7" >panel7</li>
+        <li rel="panel8" >panel8</li>
+      </ul>
+
+      <div id="panel5" class="panel active">
+        content5<br>
+        content5<br>
+        Content Changed!<br>
+        content5<br>
+        content5<br>
+      </div>
+      
+      <div id="panel6" class="panel">
+        content6<br>
+        content6<br>
+        Content Changed!<br>
+        content6<br>
+        content6<br>
+      </div>
+
+      <div id="panel7" class="panel">
+        content7<br>
+        content7<br>
+        Content Changed!<br>
+        content7<br>
+        content7<br>
+      </div>
+
+      <div id="panel8" class="panel">
+        content8<br>
+        content8<br>
+        Content Changed!<br>
+        content8<br>
+        content8<br>
+      </div>      
+    </div>
+  </article>
 
 </div>
 
