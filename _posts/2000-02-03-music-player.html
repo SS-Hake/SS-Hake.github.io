@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Music Player"
+date: 2015-02-03 15:45:21
+categories: projects
+permalink: music-player
+---
+
+<audio controls autoplay>
+	<source src="../assets/audio/test.ogg" preload="auto" type="audio/mpeg">
+	<source src="../assets/audio/Median_test.ogg" preload="metadata" >
+	<p>
+		Your browser does not suppoert the <code>audio</code> element.
+	</p>
+</audio>
+
+<audio id="demo" src="..assets/audio/test.mp3" type="audio/mpeg">
+	<div>
+		<button onclick="document.getElementById('demo').play" >Play the Audio</button>
+	</div>
+</audio>
