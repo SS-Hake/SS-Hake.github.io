@@ -30,9 +30,9 @@ $(document).ready(function () {
 		//Assign the rel (i.e "panel4") to a new variable to be used to find the next panel later.
 		var nextPanel = $(this).attr('rel');
 
-		//Find the current active panel and slide it up, hiding it before we show our new active panel.
+		//Find the current active panel and slide it up, hiding it before we show our new active panel with a callback.
 		panel.find('.panel.active').slideUp('slow', showNext);
-		console.log("hello");
+
 		//Function to be run as the current panel is hidden.
 		function showNext() {
 
@@ -43,7 +43,6 @@ $(document).ready(function () {
 			$('#' + nextPanel).slideDown('slow', function() {
 				//As it slides down, assign it as the new active panel.
 				$(this).addClass('active');
-				console.log("Hellow again");
 			});
 		}
 
