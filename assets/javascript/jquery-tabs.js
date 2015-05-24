@@ -12,7 +12,7 @@ Click a tab -> remove old tab and panel's activeness -> show the new tab and pan
 
 */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
 	//When the list element is clicked.
 	$('.tab-panels .tabs li').on('click', function() {

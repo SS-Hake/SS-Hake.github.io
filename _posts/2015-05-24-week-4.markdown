@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Week 4"
+date: 2015-05-24 15:46:21
+categories: weekly
+permalink: week-4
+---
+
+This week I learned that writing up an MSc thesis is lot harder than I thought it would be; I spend 99% of my time reading papers I read 12 months 
+earlier, 0.5% of my time writing, and 0.5% of my time re-writing the little I have written.
+
+I have learned a lot about web tech in my spare time though, so I do at least I have a fair bit to write about on the blog this week.
+
+My first task this week was to finish up and host the Jekyll one page app I started last week.  More information about that task can be found in my previous [blog post][1].
+
+
+[1]: /week-3.1
