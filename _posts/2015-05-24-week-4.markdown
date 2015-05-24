@@ -13,5 +13,30 @@ I have learned a lot about web tech in my spare time though, so I do at least I 
 
 My first task this week was to finish up and host the Jekyll one page app I started last week.  More information about that task can be found in my previous [blog post][1].
 
+Secondly I took a plunge into AngularJS by finishing off the [shaping up with Angular][2] tutorial I had started previously.  The Angular tutorial was fantastic, it took around three hours to complete, and I would heartily reccomend it to anyone starting Angular.  It covers what seems to be all of the basics, starting with a simple module interacting with the HTML using directives, before guiding you through the creation of a fully modularised store
+application that utilises dependecy injections and handling information from an HTTP API.
+
+Later in the week I created a quick jQuery app just to keep my hand in with selectors, I also covered some new ground, using new HTML tags as well as caching tag searches to improve efficiency. 
+
+I've also spent a lot of time researching the next technology I want to tackle; node js.  I've established a few tutorials I think will teach me everything I need to know and I am now ready to start coding as soon as possible.
+
+##Next week's goals:
+
+I want to get to grips with node js, my end goal is to create a coffee shop or restaurant order Angular app, which will POST or GET orders from a
+very simple node API.  From what I've read this will involved utilising node, express and probably grunt to create a small server to store the 
+information in what I expect will be a postgreSQL database (I presume this because I may eventually host it on Heroku, which I have used before, 
+but hosting is not a priority.).
+
+###Primary
+- Get to grips with node - hello world simple server and a simple HTTP API.
+- Small AJAX app which interacts with the API
+- Small angular app which interacts with API
+
+###Secondary
+-Upload the three rails apps to my 'sites' repo on github.  my simple pinterest clone, the twitter clone and the blog.
+
+The Angular tutorial was fantastic, I heartily reccomend it to anyone starting Angular.  
+
 
 [1]: /week-3.1
+[2]: https://www.codeschool.com/courses/shaping-up-with-angular-js
