@@ -6,9 +6,28 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 May 2015 18:25:48 +0100</pubDate>
-    <lastBuildDate>Sun, 24 May 2015 18:25:48 +0100</lastBuildDate>
+    <pubDate>Mon, 25 May 2015 01:45:49 +0200</pubDate>
+    <lastBuildDate>Mon, 25 May 2015 01:45:49 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Coloured Liquid</title>
+        <description>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../assets/javascript/coloured-liquid.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;
+    Javascript circles falling to give the impression of drops of liquid falling down the screen.
+&lt;/p&gt;
+&lt;canvas id='canvas' height=&quot;750&quot; width = &quot;1000&quot;&gt;&lt;/canvas&gt;</description>
+        <pubDate>Mon, 25 May 2015 17:46:21 +0200</pubDate>
+        <link>http://yourdomain.com/coloured-liquid</link>
+        <guid isPermaLink="true">http://yourdomain.com/coloured-liquid</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
     
       <item>
         <title>Week 4</title>
@@ -46,7 +65,7 @@ but hosting is not a priority.).&lt;/p&gt;
 &lt;p&gt;The Angular tutorial was fantastic, I heartily reccomend it to anyone starting Angular.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 24 May 2015 16:46:21 +0100</pubDate>
+        <pubDate>Sun, 24 May 2015 17:46:21 +0200</pubDate>
         <link>http://yourdomain.com/week-4</link>
         <guid isPermaLink="true">http://yourdomain.com/week-4</guid>
         
@@ -154,7 +173,7 @@ but hosting is not a priority.).&lt;/p&gt;
         content8&lt;br&gt;
       &lt;/div&gt;      
     &lt;/div&gt;</description>
-        <pubDate>Sat, 23 May 2015 16:45:21 +0100</pubDate>
+        <pubDate>Sat, 23 May 2015 17:45:21 +0200</pubDate>
         <link>http://yourdomain.com/dom-traversal</link>
         <guid isPermaLink="true">http://yourdomain.com/dom-traversal</guid>
         
@@ -272,7 +291,7 @@ Fully commented js is in the angular-store.js file linked below.
 	&lt;/div&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 20 May 2015 16:45:21 +0100</pubDate>
+        <pubDate>Wed, 20 May 2015 17:45:21 +0200</pubDate>
         <link>http://yourdomain.com/angular-store</link>
         <guid isPermaLink="true">http://yourdomain.com/angular-store</guid>
         
@@ -300,7 +319,7 @@ Fully commented js is in the angular-store.js file linked below.
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 17 May 2015 16:46:21 +0100</pubDate>
+        <pubDate>Sun, 17 May 2015 17:46:21 +0200</pubDate>
         <link>http://yourdomain.com/week-3.1</link>
         <guid isPermaLink="true">http://yourdomain.com/week-3.1</guid>
         
@@ -338,7 +357,7 @@ Fully commented js is in the angular-store.js file linked below.
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 16 May 2015 16:46:21 +0100</pubDate>
+        <pubDate>Sat, 16 May 2015 17:46:21 +0200</pubDate>
         <link>http://yourdomain.com/week-3</link>
         <guid isPermaLink="true">http://yourdomain.com/week-3</guid>
         
@@ -362,7 +381,7 @@ Fully commented js is in the angular-store.js file linked below.
 &lt;p&gt;Hours logged: 15.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 07 May 2015 16:46:21 +0100</pubDate>
+        <pubDate>Thu, 07 May 2015 17:46:21 +0200</pubDate>
         <link>http://yourdomain.com/week-2</link>
         <guid isPermaLink="true">http://yourdomain.com/week-2</guid>
         
@@ -388,7 +407,7 @@ Fully commented js is in the angular-store.js file linked below.
 &lt;p&gt;Hours logged: 12.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 07 May 2015 16:45:21 +0100</pubDate>
+        <pubDate>Thu, 07 May 2015 17:45:21 +0200</pubDate>
         <link>http://yourdomain.com/week-1</link>
         <guid isPermaLink="true">http://yourdomain.com/week-1</guid>
         
@@ -416,7 +435,7 @@ Fully commented js is in the angular-store.js file linked below.
 
 &lt;p&gt;Over the next 24 hours I’ll set up a custom theme for the site and import my old projects and blog posts.  Once this time is invested, adding new content should become very easy indeed!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 06 May 2015 18:56:31 +0100</pubDate>
+        <pubDate>Wed, 06 May 2015 19:56:31 +0200</pubDate>
         <link>http://yourdomain.com/updated-blog.html</link>
         <guid isPermaLink="true">http://yourdomain.com/updated-blog.html</guid>
         
@@ -436,33 +455,9 @@ Fully commented js is in the angular-store.js file linked below.
 
 	&lt;/canvas&gt;
 &lt;/div&gt;</description>
-        <pubDate>Sun, 26 Apr 2015 16:45:21 +0100</pubDate>
+        <pubDate>Sun, 26 Apr 2015 17:45:21 +0200</pubDate>
         <link>http://yourdomain.com/twilight</link>
         <guid isPermaLink="true">http://yourdomain.com/twilight</guid>
-        
-        
-        <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Angular Test</title>
-        <description>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../assets/javascript/angular-test.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;content&quot; ng-app=&quot;app&quot;&gt;
-
-	First Name:&lt;input ng-model=&quot;firstName&quot; type=&quot;text&quot;/&gt;
-	&lt;br&gt;
-	Last Name:&lt;input ng-model=&quot;lastName&quot; type=&quot;text&quot;/&gt;
-	&lt;br&gt;
-	Greetings, [[firstName]] [[lastName]]!
-
-&lt;/div&gt;</description>
-        <pubDate>Sat, 25 Apr 2015 16:45:21 +0100</pubDate>
-        <link>http://yourdomain.com/angular-test</link>
-        <guid isPermaLink="true">http://yourdomain.com/angular-test</guid>
         
         
         <category>projects</category>
