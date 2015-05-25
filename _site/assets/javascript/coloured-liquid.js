@@ -1,5 +1,7 @@
 /*Small script which draws circles in such a way that make them appear as drips running down the screen.
 
+BUG: everynow and then, they change colour halfway down?
+
 */
 
 $(document).ready(function() {
