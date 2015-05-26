@@ -6,9 +6,24 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 May 2015 15:01:51 +0100</pubDate>
-    <lastBuildDate>Mon, 25 May 2015 15:01:51 +0100</lastBuildDate>
+    <pubDate>Tue, 26 May 2015 18:20:23 +0100</pubDate>
+    <lastBuildDate>Tue, 26 May 2015 18:20:23 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Shoal</title>
+        <description>&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../assets/javascript/shoal.js&quot;&gt;&lt;/script&gt;
+
+&lt;canvas id='canvas' height=&quot;750&quot; width = &quot;1000&quot; style=&quot;border: 1px solid black&quot;&gt;&lt;/canvas&gt;</description>
+        <pubDate>Tue, 26 May 2015 16:46:21 +0100</pubDate>
+        <link>http://yourdomain.com/shoal</link>
+        <guid isPermaLink="true">http://yourdomain.com/shoal</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
     
       <item>
         <title>Coloured Liquid</title>
@@ -425,34 +440,6 @@ Fully commented js is in the angular-store.js file linked below.
         
         
         <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>Hake Blog v2.0</title>
-        <description>&lt;p&gt;Welcome to the new Hake Blog!&lt;/p&gt;
-
-&lt;p&gt;I’ve finally upgraded to a content management system; Jekyll.  I had been looking at other CMSs for a while but none of them seemed that applicable to a site of this size and structure.  I have used Ruby on Rails and Wordpress before, but they seemed too bukly for use on this site.&lt;/p&gt;
-
-&lt;p&gt;I chose Jekyll for a number of reasons including:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extreme simplicity; the clean syntax and Angular-esque loops&lt;/li&gt;
-  &lt;li&gt;No database, which means faster loading&lt;/li&gt;
-  &lt;li&gt;Simple markdown syntax for content&lt;/li&gt;
-  &lt;li&gt;Compatibility with Github Hosting&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jekyll essentially generates the same static pages that I was writing, but increases writing speed by building the pages from pre-written code modules. This all comes without the need for dynamic hosting, which is a requirement for Wordpress and the like.  Plus, there is always the option to extend with Disqus or a new theme in the future if I do want to add some interactivity or change the look of the site completely.&lt;/p&gt;
-
-&lt;p&gt;Over the next 24 hours I’ll set up a custom theme for the site and import my old projects and blog posts.  Once this time is invested, adding new content should become very easy indeed!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 May 2015 18:56:31 +0100</pubDate>
-        <link>http://yourdomain.com/updated-blog.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/updated-blog.html</guid>
-        
-        
-        <category>update</category>
         
       </item>
     
