@@ -14,19 +14,19 @@ nav:
 projects:
 - {title: Shoal, date: 26/05/15, url: /projects/shoal}
 - {title: Coloured Fireflies, date: 25/05/15, url: /projects/coloured-fireflies}
-- {title: Coloured Liquid, date: 25/05/15, url: projects/coloured-liquid}
-- {title: jQuery DOM Paractice, date: 23/05/15, url: projects/dom-traversal}
-- {title: Music Player, date: 20/05/15, url: projects/music-player}
-- {title: Angular Store, date: 19/05/15, url: projects/angular-store}
-- {title: Twilight, date: 25/04/15, url: projects/twilight}
-- {title: Angular Test, date: 24/04/15, url: projects/angular-test}
-- {title: Particles Test, date: 23/04/15, url: projects/particles-test}
-- {title: Cavcas Clock, date: 23/04/15, url: projects/canvas-clock}
-- {title: Snake, date: 21/04/15, url: projects/snake}
-- {title: Throwing Squares, date: 20/04/15, url: projects/throwing-squares}
-- {title: Blinking Squares, date: 17/04/15, url: projects/blinking-squares}
-- {title: Colour Clock, date: 16/04/15, url: projects/colour-clock}
-- {title: Birthday Facts, date: 14/04/15, url: projects/birthday-facts}
-- {title: Animator, date: 10/04/15, url: projects/animator}
-- {title: Day Counter, date: 09/04/15, url: projects/day-counter}
-- {title: Squares, date: 08/04/15, url: projects/squares}
+- {title: Coloured Liquid, date: 25/05/15, url: /projects/coloured-liquid}
+- {title: jQuery DOM Paractice, date: 23/05/15, url: /projects/dom-traversal}
+- {title: Music Player, date: 20/05/15, url: /projects/music-player}
+- {title: Angular Store, date: 19/05/15, url: /projects/angular-store}
+- {title: Twilight, date: 25/04/15, url: /projects/twilight}
+- {title: Angular Test, date: 24/04/15, url: /projects/angular-test}
+- {title: Particles Test, date: 23/04/15, url: /projects/particles-test}
+- {title: Cavcas Clock, date: 23/04/15, url: /projects/canvas-clock}
+- {title: Snake, date: 21/04/15, url: /projects/snake}
+- {title: Throwing Squares, date: 20/04/15, url: /projects/throwing-squares}
+- {title: Blinking Squares, date: 17/04/15, url: /projects/blinking-squares}
+- {title: Colour Clock, date: 16/04/15, url: /projects/colour-clock}
+- {title: Birthday Facts, date: 14/04/15, url: /projects/birthday-facts}
+- {title: Animator, date: 10/04/15, url: /projects/animator}
+- {title: Day Counter, date: 09/04/15, url: /projects/day-counter}
+- {title: Squares, date: 08/04/15, url: /projects/squares}
