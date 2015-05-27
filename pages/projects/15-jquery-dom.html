@@ -1,0 +1,104 @@
+---
+layout: page
+title: "jQuery DOM traversal"
+date: 2015-05-23 
+permalink: projects/dom-traversal/
+---
+
+<p>
+	Simple script which handles the actions of tabs; displaying the correct panels with the correct
+	information at the approproate time.  Utilising scaling properly, to select the nearest, correct panels
+	rather than searching the entire DOM for the correct element.
+	<br>
+	<br>
+	Also my first time using html tags other than ids and classes to identify elements.  In this case 'rel's.
+	<br>
+	<br>
+	Full comments in the jquery-tabs js file.
+</p>
+
+<link href="/assets/css/jquery-tabs.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/javascript/jquery-tabs.js"></script>
+
+<div class="tab-panels">
+      <ul class="tabs">
+        <li rel="panel1" class="active">panel1</li>
+        <li rel="panel2" >panel2</li>
+        <li rel="panel3" >panel3</li>
+        <li rel="panel4" >panel4</li>
+      </ul>
+
+      <div id="panel1" class="panel active">
+        content1<br>
+        content1<br>
+        Content Changed!<br>
+        content1<br>
+        content1<br>
+      </div>
+      
+      <div id="panel2" class="panel">
+        content2<br>
+        content2<br>
+        Content Changed!<br>
+        content2<br>
+        content2<br>
+      </div>
+
+      <div id="panel3" class="panel">
+        content3<br>
+        content3<br>
+        Content Changed!<br>
+        content3<br>
+        content3<br>
+      </div>
+
+      <div id="panel4" class="panel">
+        content4<br>
+        content4<br>
+        Content Changed!<br>
+        content4<br>
+        content4<br>
+      </div>      
+    </div>
+
+<div class="tab-panels">
+      <ul class="tabs">
+        <li rel="panel5" class="active">panel5</li>
+        <li rel="panel6" >panel6</li>
+        <li rel="panel7" >panel7</li>
+        <li rel="panel8" >panel8</li>
+      </ul>
+
+      <div id="panel5" class="panel active">
+        content5<br>
+        content5<br>
+        Content Changed!<br>
+        content5<br>
+        content5<br>
+      </div>
+      
+      <div id="panel6" class="panel">
+        content6<br>
+        content6<br>
+        Content Changed!<br>
+        content6<br>
+        content6<br>
+      </div>
+
+      <div id="panel7" class="panel">
+        content7<br>
+        content7<br>
+        Content Changed!<br>
+        content7<br>
+        content7<br>
+      </div>
+
+      <div id="panel8" class="panel">
+        content8<br>
+        content8<br>
+        Content Changed!<br>
+        content8<br>
+        content8<br>
+      </div>      
+    </div>

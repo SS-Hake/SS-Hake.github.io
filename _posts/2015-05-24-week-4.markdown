@@ -38,8 +38,6 @@ JSON file up and running.
 ###Secondary
 -Upload the three rails apps to my 'sites' repo on github.  my simple pinterest clone, the twitter clone and the blog.
 
-The Angular tutorial was fantastic, I heartily reccomend it to anyone starting Angular.  
-
 
 [1]: /week-3.1
 [2]: https://www.codeschool.com/courses/shaping-up-with-angular-js

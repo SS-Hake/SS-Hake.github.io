@@ -169,22 +169,9 @@ pre {
         padding-left: $spacing-unit / 2;
         padding-top: 20px;
     }
+    display: block
 }
 
-/* 
-Sidebar */
-#side-bar {
-    float: left;
-    width: 20%;
-}
-
-/* Page Content */
-
-#content-main {
-    float: right;
-    width: 75%;
-    padding-bottom: 20px;
-}
 
 /**
  * Clearfix

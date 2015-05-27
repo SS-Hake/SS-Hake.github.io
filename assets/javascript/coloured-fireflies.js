@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
+	//Grab canvas and sort the dimension variables.
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext("2d");
-
 	var width = canvas.width;
 	var height = canvas.height;
 
+	//Variables to be used later.
 	var startLines = 4,
 		startWidth = 10,
 		velocity = 5,
@@ -17,19 +18,21 @@ $(document).ready(function() {
 		frame = 0,
 		timer = 0;
 
+	//Array to hold values to be used as variables for direction.
 	var directions = [
-			//velocity in x and y axis.
+			//Up down left right
 			[ 0, 1 ],
    			[ 1, 0 ],
     		[ 0, -1 ],
    			[ -1, 0 ],
-
+   			//Odd partial directions.
    			[ .3, .3 ],
    			[ .3, -.3 ],
    			[ -.3, .3 ],
    			[ -.3, -.3]
 		];
 
+	//A preliminary line object to put in the array.
 	var starterLine = {
 		x: width / 2,
 		y: height / 2,
@@ -39,7 +42,7 @@ $(document).ready(function() {
 	};
 
 	function init() {
-
+		//Init function pushes the preliminary object onto array and draws background.
 		for(var i = 0; i < startLines; i++) {
 			lines.push(new Line(starterLine));
 			console.log("pushed");
@@ -52,21 +55,23 @@ $(document).ready(function() {
 	}
 
 	function getColour(x) {
+		//Grabs and reduces the colour value - provides the colour for the fading colour in the tail.
 		return 'hsl(hue, 100%, 50%)'.replace('hue', x / width * 360 + frame);
 	}
 
 	function animate() {
+		//Handle the frame steps.
 		window.requestAnimationFrame(animate);
-
+		
 		frame++;
-
+		//Set the colour and draw the rectangle.
 		ctx.shadowBlur = 0;
 		ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
 		ctx.fillRect(0, 0, width, height);
 		ctx.shadowBlur = 0.5;
 
+		
 		for(var i = 0; i < lines.length; i++) {
-			
 			if(lines[i].step()) {
 				lines.splice(i, 1);
 				--i;

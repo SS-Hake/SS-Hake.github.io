@@ -5,71 +5,14 @@ categories: test
 permalink: project-list/
 ---
 
-<div id="site_list_wrapper">
-	<h4>Week 1</h4>
-	<ul>
-		<li>
-			<span class="item"> 08/04/15 </span> <a href="/squares">Squares</a>
-		</li>
-		<li>
-			<span class="item"> 09/04/15 </span> <a href="/day-counter">Day Counter</a>
-		</li>
-		<li>
-			<span class="item"> 10/04/15 </span> <a href="/animator">Animated Boxes</a>
-		</li>
-		<li>
-			<span class="item"> 14/04/15 </span> <a href="/birthday-facts">Birthday Facts</a>
-		</li>
-		<li>
-			<span class="item"> 16/04/15 </span> <a href="/colour-clock">Colour Clock</a>
-		</li>
-		<li>
-			<span class="item"> 17/04/15 </span> <a href="/blinking-squares">Blinking Squares</a>
-		</li>
-	</ul>
-	<h4>Week 2</h4>
-	<ul>
-		<li>
-			<span class="item"> 20/04/15 </span> <a href="/throwing-squares">Throwing Squares</a>
-		</li>
-		<li>
-			<span class="item"> 21/04/15 </span> <a href="/snake">Snake</a>
-		</li>
-		<li>
-			<span class="item"> 23/04/15 </span> <a href="/canvas-clock">Canvas Clock</a>
-		</li>
-		<li>
-			<span class="item"> 23.5/04/15 </span> <a href="/particles-test">Particles Test</a>
-		</li>
-		<li>
-			<span class="item"> 24/04/15 </span> <a href="/angular-test">Angular Test</a>
-		</li>
+<ul id="blog-list-container">
+	{% for project in site.data.settings.projects %}
+	    <li>
+	      <span class="post-meta">{{ project.date }}</span>
 
-	</ul>
-	<h4>Week 3</h4>
-	<ul>
-		<li>
-			<span class="item"> 20/05/15 </span> <a href="/throwing-squares">Angular Test</a>
-		</li>
-		<li>
-			<span class="item"> 21/04/15 </span> <a href="/snake">Snake</a>
-		</li>
-		<li>
-			<span class="item"> 23/04/15 </span> <a href="/canvas-clock">Canvas Clock</a>
-		</li>
-		<li>
-			<span class="item"> 23.5/04/15 </span> <a href="/particles-test">Particles Test</a>
-		</li>
-		<li>
-			<span class="item"> 24/04/15 </span> <a href="/angular-test">Angular Test</a>
-		</li>
-
-	</ul>
-
-	<h4>Ongoing projects</h4>
-	<ul>
-		<li>
-			<a href="/twilight">Twilight.js</a>
-		</li>
-	</ul>
-</div>
+	      <h2>
+	        <a class="post-link" href="{{ project.url | prepend: site.url }}">{{ project.title }}</a>
+	      </h2>
+	    </li>
+	{% endfor %}
+</ul>

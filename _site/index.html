@@ -13,61 +13,15 @@
 ">
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
-  <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://yourdomain.com/feed.xml" />
+  <link rel="canonical" href="http://ss-hake.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://ss-hake.github.io/feed.xml" />
 
 </head>
 
 
   <body>
 
-    <!-- <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">Hake Blog</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-          <a class="page-link" href="/blog-list/">Blog</a>
-          
-        
-          
-          <a class="page-link" href="/blog-list/">Blog</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/project-list/">Projects</a>
-          
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
- -->
-<header>
+    <header>
 
     <div id="wrapper">
 
@@ -168,61 +122,86 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        
+        <section class="intro-section">
 
+	<div class="intro-blurb">
+		<h2>Welcome</h2>
+		<p class="intro-text">
+			Welcome to the personal blog of Sam Scott-Hake. I am currently a graduate student at the 
+			University of Lincoln working with Computer Vision and Machine Learning techniques.  This blog contains
+			 details of my journey diving into web technology; apps made with various javascript libraries such as 
+			 AngularJS and ThreeJS, server and web architecture using techonogies like nodeJS, and 
+			 some fun canvas doodles.
+		</p>
+	</div>
 
-  <div id="side-bar">
-    <h1 class="page-heading">Recent Posts</h1>
-    <ul class="post-list">
-      
-        <li>
-          <span class="post-meta">May 26, 2015</span>
+</section>
 
-          <h2>
-            <a class="post-link" href="/shoal">Shoal</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 25, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/coloured-liquid">Coloured Liquid</a>
-          </h2>
-        </li>
-      
-        <li>
-          <span class="post-meta">May 25, 2015</span>
-
-          <h2>
-            <a class="post-link" href="/coloured-fireflies">Coloured Fireflies</a>
-          </h2>
-        </li>
-      
-    </ul>
-  </div>
-
-  <div id="content-main">
-    <h2>Current project: Web Design</h2>
-    <p>
-      I'm currently learning how to use a selection of javascript libraries beginning with <a href="http://jquery.com/">jQuery</a> before moving on to <a href="https://angularjs.org/">Angular.js</a>, <a href="http://threejs.org/">three.js</a> and <a href="https://nodejs.org/">Node.js</a>. 
-    </p>
-    <p>
-      <a href="/project-list">Here</a> is a list of pages showing some example projects.
-    </p>
-    <p>
-      Check back often, as I will be updating the site with new pages as regularly as I can while still completing university work.
-      (I'm aiming for a new page every two days!) <br><br>
-
-      Full comments are in each page's javascript file.
-    </p>
-
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-  </div>
-
-</div>
 
       </div>
+      	<section class="news-section">
+	
+	<div class="projects-lockup">
+		<h2 class="news-title">Recent Projects</h2>
+
+		<!-- projects loop -->
+		<div class="project-loop">
+			
+				<div class="project-details">
+					<a class="project-title" href="/projects/shoal">Shoal</a>
+					<h5 class="project-date">26/05/15</h5>
+					<p class="project-blurb">
+						Simple jQuery app which uses jquery tags to traverse the dom and show approprate content.
+					</p>
+				</div>
+			
+				<div class="project-details">
+					<a class="project-title" href="/projects/coloured-fireflies">Coloured Fireflies</a>
+					<h5 class="project-date">25/05/15</h5>
+					<p class="project-blurb">
+						Simple jQuery app which uses jquery tags to traverse the dom and show approprate content.
+					</p>
+				</div>
+			
+				<div class="project-details">
+					<a class="project-title" href="projects/coloured-liquid">Coloured Liquid</a>
+					<h5 class="project-date">25/05/15</h5>
+					<p class="project-blurb">
+						Simple jQuery app which uses jquery tags to traverse the dom and show approprate content.
+					</p>
+				</div>
+			
+		</div>
+		<a href="/project-list">All Projects</a>
+	</div>
+
+	<div class="blog-lockup">
+
+		<h2 class="news-title">Recent Blog Posts</h2>
+
+		<div class="project-loop">
+			
+				<div class="project-details">
+					<a class="project-title" href="/week-4">Week 4</a>
+					<h5 class="project-date">May 24, 2015</h5>
+				</div>
+			
+				<div class="project-details">
+					<a class="project-title" href="/week-3.1">Week 3.1</a>
+					<h5 class="project-date">May 17, 2015</h5>
+				</div>
+			
+				<div class="project-details">
+					<a class="project-title" href="/week-3">Week 3</a>
+					<h5 class="project-date">May 16, 2015</h5>
+				</div>
+			
+		</div>
+		<a href="/blog-list">All posts</a>
+	</div>
+
+</section>
     </div>
 
     <footer class="site-footer">
