@@ -8,6 +8,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+//Tuck everything but titles in for readability
+.post-content p, blockquote, pre, hr,
+dl, dd, ol, ul, figure  {
+    padding: 0px 75px 0px 75px;
+}
+
 
 
 /**

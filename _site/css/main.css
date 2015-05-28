@@ -48,6 +48,10 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+.post-content p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  padding: 0px 75px 0px 75px; }
+
 /**
  * Basic styling
  */
@@ -297,6 +301,9 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+.site-footer ul {
+  padding: 0px; }
+
 /**
  * Page content
  */
@@ -494,8 +501,24 @@ pre {
   .highlight .il {
     color: #099; }
 
+.image-container {
+  margin: 0px auto;
+  width: 500px;
+  align: center; }
+  .image-container .image {
+    width: 400px;
+    display: block;
+    margin: 0px auto; }
+  .image-container .caption {
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+    font-style: italic;
+    color: #666; }
+
 .intro-section {
-  text-align: center; }
+  text-align: center;
+  padding: 0px 100px 0px 100px; }
 
 .news-section {
   text-align: center;

@@ -4,8 +4,38 @@ title: About
 permalink: /about/
 ---
 
-My name is Sam Scott-Hake, I am currently working towards an MSc Computer Science by Research from the University of Lincoln.  On this website you will find some of my side projects as well as a blog which will feature thoughts from my work and leisure coding projects! 
+My name is Sam Scott-Hake, I am currently a graduate student at the University of Lincoln.  This is my personal blog, where among other things, 
+I keep a record of my progress in learning different aspects of web design.
 
-You can find the source code for this site as well as the code for the javascript projects linked here on my [github!](https://github.com/SS-Hake)
+###Long-term goals
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+###Why blog?
+
+In the early part of 2015 I saw a [video][1] of a talk given by Leslie Lamport, who is the creator of LaTeX among other things, which convinced me I should
+keep a better record of the progress I am making with regard to my programming skills.  I had been thinking about starting a blog since I completed my BSc,
+I had leared an enormous amount reading other people's blogs, checking for new posts linked through hacker news has long been part of my daily ritual.
+
+I had also been tempted because I know many others who have successfully increased their productivity through keeping organised logs of daily or weekly tasks.  I own I very a <i>very </i>  well used 2 meter white board, but apart from that I had never written much outside of the usual planning steps I had developed at university.
+<br>
+<br>  
+
+{% include image.html url="/assets/img/blog-images/lamport.jpg" description="An image of Leslie Lamport." caption="'If you're thinking without writing, you only think you're thinking.'" %}
+
+<br>
+All this reading and advice from friends reached critical mass around the beginning of March, so I began keeping a much 
+more detailed log of everything I was doing.  The writing I have published since isn't perfect, I haven't taken the time to spell check outside of sublime
+text, and I am certain the sentence structure has been awful in at least a few places.  Quality issues can be addressed later however, I have already expedited my learning by a large factor just through keeping these basic notes somewhere accessible.  I no longer have to spend time trying to remember where I got to in a tutorial or which goals I had set last month, I don't have to take any steps backwards while learning.
+
+I intend to keep it up for the forseeable future and would reccomend the blogging process to anyone starting to learn... anything really, I don't think 
+the benefits are unique to coding.  I am planning to expand the subject of my posts from the normal weekly roundup/goals into more specific coding 
+subjects as well as some tutorials in the future, as much to solidify my learning as to help anyone else, although I hope they do!
+
+
+###More information
+You can find the source code for this site as well as the code for the javascript projects linked here, on my [github!](https://github.com/SS-Hake)
+
+You can find Jekyll (which I used to create this site) at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+
+[1]: http://channel9.msdn.com/Events/Build/2014/3-642
