@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Seenit"
+date: 2015-05-26
+permalink: projects/seenit-angular/
+---
+<html>
+  <head>
+    <title>Seenit News</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="/assets/javascript/seenit-angular.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="mainController as mainCtrl">
+
+    <div ng-repeat="post in mainCtrl.posts | orderBy: '-upvotes'">
+      [[post.title]] - upvotes: [[post.upvotes]]
+    </div>
+
+    <form ng-submit="mainCtrl.addPost()">
+      <input type="text" placeholder="Post Title" ng-model="title"></input>
+      <button type="submit">Post</button>
+    </form>
+
+  </body>
+</html>

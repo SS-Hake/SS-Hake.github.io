@@ -35,7 +35,6 @@ Pipes in directives can format data to date, time, currency etc.
 	  $interpolateProvider.startSymbol('[[');
 	  $interpolateProvider.endSymbol(']]');
 	});
-
 	//This controller displays the gem modules - the most basic controller.
 	app.controller('StoreController', function() {
 		this.products = gems;
