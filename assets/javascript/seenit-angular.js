@@ -4,8 +4,14 @@ var app = angular.module('app', [], function($interpolateProvider) {
 	$interpolateProvider.endSymbol(']]');
 });
 
-app.controller('mainController', function() {
 
+app.factory('posts', [function() {
+	var o = {
+		posts: []
+	};
+	return o;
+}]);
+app.controller('mainController', function() {
 	var mainCtrl = this;
 
 	mainCtrl.posts = [
@@ -17,7 +23,20 @@ app.controller('mainController', function() {
 	];
 
 	mainCtrl.addPost = function() {
-		mainCtrl.posts.push({title: 'A new post', upvotes: 0});
-		console.log("Pressed.");
+		//Don't let users push with no title.
+		if(!mainCtrl.title || mainCtrl.title === '') { return }
+		//Push the new post to the array and reset the 
+		mainCtrl.posts.push({
+			title: mainCtrl.title, 
+			link: mainCtrl.link,
+			upvotes: 0
+		});
+		mainCtrl.title = null;
+		mainCtrl.link = null;
+	};
+
+	mainCtrl.incrementUpvotes = function(post) {
+		post.upvotes += 1;
 	};
 });
+/*Injecting the Service*/
