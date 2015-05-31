@@ -11,8 +11,12 @@ app.factory('posts', [function() {
 	};
 	return o;
 }]);
-app.controller('mainController', function() {
+
+app.controller('mainController', ['posts', function(posts) {
+	
 	var mainCtrl = this;
+
+	mainCtrl.posts = posts.posts;
 
 	mainCtrl.posts = [
 		{title: 'post1', upvotes: 1},
@@ -38,5 +42,5 @@ app.controller('mainController', function() {
 	mainCtrl.incrementUpvotes = function(post) {
 		post.upvotes += 1;
 	};
-});
+}]);
 /*Injecting the Service*/
