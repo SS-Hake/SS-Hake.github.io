@@ -31,9 +31,9 @@ but hosting is not a priority).
 - <s>Get to grips with node - hello world simple server and a simple HTTP API</s>.  26/05/15 -Finished the first tutorial. Working 
 node app with Express.js framework.  Nodemon running for lack of --watch command as found in Jekyll.  Simple Api which responds with 
 JSON file up and running.
-- Working API with database.
-- Small AJAX app which interacts with the API
-- Small angular app which interacts with API
+- <s>Working API with database.</s> - 29/05/15, Simple movie database in node with Create and Read functionality.  
+- Small AJAX app which interacts with the API - not yet complete, first task for next week.
+- <s>Small angular app which interacts with API</s> 01/06/15, A bit late but working "Hacker News" clone, Seenit.
 
 ###Secondary
 -Upload the three rails apps to my 'sites' repo on github.  my simple pinterest clone, the twitter clone and the blog.

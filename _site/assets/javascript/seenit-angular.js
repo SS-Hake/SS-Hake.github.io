@@ -4,7 +4,6 @@ var app = angular.module('app', [], function($interpolateProvider) {
 	$interpolateProvider.endSymbol(']]');
 });
 
-
 app.factory('posts', [function() {
 	var o = {
 		posts: []
@@ -17,14 +16,6 @@ app.controller('mainController', ['posts', function(posts) {
 	var mainCtrl = this;
 
 	mainCtrl.posts = posts.posts;
-
-	mainCtrl.posts = [
-		{title: 'post1', upvotes: 1},
-		{title: 'post2', upvotes: 5},
-		{title: 'post3', upvotes: 23},
-		{title: 'post4', upvotes: 4},
-		{title: 'post5', upvotes: 9},
-	];
 
 	mainCtrl.addPost = function() {
 		//Don't let users push with no title.
