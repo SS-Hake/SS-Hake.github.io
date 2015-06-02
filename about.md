@@ -21,7 +21,7 @@ Perhaps my goals will have changed in a few months and I will look for jobs in a
 
 ###Why blog?
 
-In the early part of 2015 I saw a [video][1] of a talk given by Leslie Lamport, who is the creator of LaTeX among other things, which convinced me I should
+In the early part of 2015 I saw a [video][1] of a talk given by Leslie Lamport, the creator of LaTeX among other things, which convinced me I should
 keep a better record of the progress I am making with regard to my programming skills.  I had been thinking about starting a blog since I completed my BSc,
 I had leared an enormous amount reading other people's blogs, checking for new posts linked through hacker news has long been part of my daily ritual.
 
