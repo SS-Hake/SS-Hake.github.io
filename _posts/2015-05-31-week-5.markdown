@@ -29,5 +29,12 @@ Finish and host the Seenit news app from last week, and move on to a simple AJAX
 - Host Seenit on heroku.
 - Comment last week's canvas apps.
 
+###Reading
+- Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (Start)
+- [Interesting interview prep/personal development list][3]
+- [UI/Typeface article][4]
+
 [1]: https://github.com/SS-Hake/Seenit
 [2]: http://designscrazed.org/free-photoshop-psd-website-templates/
+[3]: https://github.com/andreis/interview
+[4]: http://thomasbyttebier.be/blog/the-best-ui-typeface-goes-unnoticed
