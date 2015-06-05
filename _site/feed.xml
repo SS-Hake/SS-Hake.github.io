@@ -2,13 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hake Blog</title>
-    <description>Adventures in web design.
+    <description>The personal blog of Sam Scott-Hake.
 </description>
     <link>http://ss-hake.github.io/</link>
     <atom:link href="http://ss-hake.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 May 2015 17:29:46 +0100</pubDate>
-    <lastBuildDate>Sun, 31 May 2015 17:29:46 +0100</lastBuildDate>
+    <pubDate>Sat, 06 Jun 2015 00:23:08 +0100</pubDate>
+    <lastBuildDate>Sat, 06 Jun 2015 00:23:08 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Week 5</title>
+        <description>&lt;p&gt;A belated blog post this week, it took me until now to finish the MEAN stack tutorial I had been using.  My coding experience has taught me not to expect to do anything correctly the first time, so I have just soldiered through the errors and issues I was stuck on throughout the creation of my first app.&lt;/p&gt;
+
+&lt;p&gt;I began the week with a few more jQuery canvas apps to keep my hand in, before moving on to the creation of a “Hacker News” clone with persistent data and full functioning comments/upvote system.  I’ve learned the basics of node routing as well as putting what I had learned about linking APIs to Angular applications with services into practice.&lt;/p&gt;
+
+&lt;p&gt;Due to the time extension for the completing “&lt;a href=&quot;https://github.com/SS-Hake/Seenit&quot;&gt;Seenit&lt;/a&gt;”, I have pushed one goal from last week, creating a simple AJAx app with functiong back-end, to next week. It’ll be my first task and should only take a couple of hours, if that.&lt;/p&gt;
+
+&lt;p&gt;Next week I also plan to create another responsive site from a PSD document.  I have found quite a nice site which provides detailed photoshop documents, which I can open with GIMP, called &lt;a href=&quot;http://designscrazed.org/free-photoshop-psd-website-templates/&quot;&gt;Designscrazed&lt;/a&gt;.   I want to make quite a few of these over the next month or so because I have heard that this will be the sort of thing I will be doing as a junior web developer.  It will mean I can practice more SASS usage, I need to focus on creating a more efficient workspace, complete with proper mixin usage.&lt;/p&gt;
+
+&lt;p&gt;My third and final task this week is to create and style the frontend for a store angular appliation, this will combine two areas of research, SASS usage, and Angular app creation.  Most of the Angular applications I have seen so far just use bootstrap, I presume for speed’s sake, but I would like to hand style one just to solidify my learning so far.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-weeks-goals&quot;&gt;Next Week’s Goals&lt;/h2&gt;
+&lt;p&gt;Finish and host the Seenit news app from last week, and move on to a simple AJAX application for practice’s sake.  Create one, possibly two responsive websites from PSD documents.  Consolidate learning with a hand styled angular store app.&lt;/p&gt;
+
+&lt;h3 id=&quot;primary&quot;&gt;Primary&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;AJAX app from last week.&lt;/li&gt;
+  &lt;li&gt;Responsive site from PSD.&lt;/li&gt;
+  &lt;li&gt;Hand styled Angular app.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;secondary&quot;&gt;Secondary&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Second responsive site.&lt;/li&gt;
+  &lt;li&gt;Host Seenit on heroku.&lt;/li&gt;
+  &lt;li&gt;Comment last week’s canvas apps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;reading&quot;&gt;Reading&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (Start)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/andreis/interview&quot;&gt;Interesting interview prep/personal development list&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thomasbyttebier.be/blog/the-best-ui-typeface-goes-unnoticed&quot;&gt;UI/Typeface article&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 01 Jun 2015 16:46:21 +0100</pubDate>
+        <link>http://ss-hake.github.io/week-5</link>
+        <guid isPermaLink="true">http://ss-hake.github.io/week-5</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>Week 4</title>
@@ -41,9 +87,17 @@ but hosting is not a priority).&lt;/p&gt;
 node app with Express.js framework.  Nodemon running for lack of –watch command as found in Jekyll.  Simple Api which responds with 
 JSON file up and running.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Working API with database.&lt;/li&gt;
-  &lt;li&gt;Small AJAX app which interacts with the API&lt;/li&gt;
-  &lt;li&gt;Small angular app which interacts with API&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Working API with database.&lt;/s&gt;
+    &lt;ul&gt;
+      &lt;li&gt;29/05/15, Simple movie database in node with Create and Read functionality.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Small AJAX app which interacts with the API - not yet complete, first task for next week.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Small angular app which interacts with API&lt;/s&gt;
+    &lt;p&gt;01/06/15, A bit late but working “Hacker News” clone, Seenit.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;secondary&quot;&gt;Secondary&lt;/h3&gt;

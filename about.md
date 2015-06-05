@@ -31,6 +31,8 @@ I have long been a fan of iterative development, where the most basic form of an
 
 I once read that someone who has built a skateboard from a piece of old board will get a lot further than someone who has spend hours designing a lightweight carbon fibre frame but has no wheels.  This is not to say that having rock solid foundations will not be important at release, but in the first stages of development, proof of concept prototypes have been invaluable.
 
+Working mess is sometimes worse than you think leblanc - later equals never
+
 In the coming months I plan to read a lot more about agile development as well as other popular programming methodologies as the issue becomes more important as I enter employment.  It is an area I feel I should have developed more during my Msc project, but I haveonly touched briefly on the main ones so far.-->
 
 ###Why blog?

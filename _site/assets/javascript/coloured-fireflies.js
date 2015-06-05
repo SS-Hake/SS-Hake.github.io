@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	//TODO: comments.
 	//Grab canvas and sort the dimension variables.
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext("2d");

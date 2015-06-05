@@ -1,6 +1,6 @@
 #General Settings
 title: Hake Blog
-subtitle: A glimpse into the brain of Sam Scott-Hake
+subtitle: The personal blog of Sam Scott-Hake
 email: sam_hake@live.co.uk
 
 #Nav bar and links
@@ -12,6 +12,7 @@ nav:
 
 #Projects
 projects:
+- {title: Spinning Orbs, date: 03/06/15, url: /projects/spinning-orbs, blurb: ''}
 - {title: Seenit Angular, date: 29/05/15, url: /projects/seenit-angular}
 - {title: Shoal, date: 26/05/15, url: /projects/shoal}
 - {title: Coloured Fireflies, date: 25/05/15, url: /projects/coloured-fireflies}

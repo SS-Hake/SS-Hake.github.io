@@ -38,11 +38,34 @@
 
 #wrapper nav a {
 	text-transform: uppercase;
-	color: #aaaaaa;
+	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 #wrapper nav a:hover {
-	color: #333333
+	color: #9D7979;
+}
+
+.button {
+	background: #9a9a9a;
+	border: 2px solid #aaa;
+	box-shadow: 0 6px 0px #666;
+	border-radius: 4px;
+	padding: 6px;
+
+}
+
+.button:hover
+{
+  /* 
+    Decrease the shadow effect by the size
+    of the margin-top effect. 
+    (3 px in this case, from 7px to 4px)
+  */
+	margin-top: 40px;
+	background-color: #666;
+	-webkit-box-shadow: 0px 4px 0px #666;
+	-moz-box-shadow: 0px 4px 0px #666;
+	box-shadow:  0px 4px 0px #666;
 }
