@@ -17,6 +17,24 @@ $(document).ready(function () {
 
 	var cStep = 255 / s * t;
 
+	var red,
+		green,
+		blue;
+
+	var x,
+		y;
+
+	function colors(time, i, j) {
+		red = Math.floor((Math.sin(time) * j * i) % 255);
+		green = Math.floor((Math.sin(time * 0.5) * j * i) % 255);
+		blue = Math.floor((Math.sin(time * 0.25) * j * i) % 255);
+	}
+
+	function circlePosition(time, i, j, m, n) {
+		x = width / 2 + j * m * Math.cos(time + j / i);
+		y = height / 2 + j * n * Math.sin(time + i / j);
+	}
+
 	function update() {
 		m = width * 0.5 / s;
 		n = height * 0.5 / t;
@@ -29,13 +47,10 @@ $(document).ready(function () {
 				ctx.beginPath();
 				var c = i * j * cStep;
 
-				//Colors
-				var red = Math.floor((Math.sin(time) * j * i) % 255);
-				var green = Math.floor((Math.sin(time * 0.5) * j * i) % 255);
-				var blue = Math.floor((Math.sin(time * 0.25) * j * i) % 255);
+				colors(time, i, j);
 
-				var x = width / 2 + j * m * Math.cos(time + j / i);
-				var y = height / 2 + j * n * Math.sin(time + i / j);
+				circlePosition(time, i, j, m, n);
+				
 				ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
 				ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
 				ctx.fillRect(0,0, 5, 5);
