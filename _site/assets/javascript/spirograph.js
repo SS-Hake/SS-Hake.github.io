@@ -32,6 +32,8 @@ $(document).ready(function () {
 	}
 
 	function circlePosition(counter, i, j, m, n) {
+		//Generates new x and y values (position) every step, changes with each new
+		//counter value.
 		x = width / 2 + j * m * Math.cos(counter + j / i);
 		y = height / 2 + j * n * Math.sin(counter + i / j);
 	}
@@ -39,9 +41,12 @@ $(document).ready(function () {
 	function update() {
 		m = width * 0.5 / s;
 		n = height * 0.5 / t;
-
-		ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+		//This was for drawing a background each step to give smooth
+		//animation, but I thought it looked cooler without it in the end.
+		//ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+		//ctx.fillRect(0, 0, width, height);
 		//Loop through the orbs.
+		//Two loops for circular motion.
 		for(var i = 0; i < s; i++) {
 			for(var j = 0; j < t; j++) {
 
@@ -63,7 +68,5 @@ $(document).ready(function () {
 		//Loop again.
 		requestAnimationFrame(update);
 	}
-
 	requestAnimationFrame(update);
-
 });
