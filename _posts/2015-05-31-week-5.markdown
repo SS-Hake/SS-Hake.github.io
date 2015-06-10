@@ -20,19 +20,19 @@ My third and final task this week is to create and style the frontend for a stor
 Finish and host the Seenit news app from last week, and move on to a simple AJAX application for practice's sake.  Create one, possibly two responsive websites from PSD documents.  Consolidate learning with a hand styled angular store app.
 
 ###Primary
-- AJAX app from last week.
-- Responsive site from PSD.
+- <s>AJAX app from last week.</s> Turned into Bookshelf, on my github.
+- <s>Responsive site from PSD.</s> 3-portfolio-PSD in "sites" on my github.
 - Hand styled Angular app.
 
 ###Secondary
-- Second responsive site.
-- Host Seenit on heroku.
-- Comment last week's canvas apps.
+- <s>Second responsive site.</s>
+- <s>Host Seenit on heroku.</s> 
+- <s>Comment last week's canvas apps.</s>
 
 ###Reading
 - Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (Start)
 - [Interesting interview prep/personal development list][3]
-- [UI/Typeface article][4]
+- <s>[UI/Typeface article][4]</s>
 
 [1]: https://github.com/SS-Hake/Seenit
 [2]: http://designscrazed.org/free-photoshop-psd-website-templates/

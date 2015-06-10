@@ -1,0 +1,6 @@
+Half the problem with learning to code is unknown unknowns.  You can learn the basics of a technology very quickly, but learning what that technology is really capable of requires a much deeper understanding of the majority of a technologies intricacies, which can take a long time.  The fastest way I have found for doing this is to simply to focus on the volume of projects you create using the technology you are learning.  Focusing on fairly fast project development, over slow, methodical development with attention to detail can benfit you greatly by allowing you to commit the basics to memory incredibly quickly, the sooner you can get the first 20 minutes of project creation underway without stopping to read or look up a basic definition, the sooner you can focus on reading up on the more advanced aspects of a technology or platform.  Then as you learn those
+
+
+You might understand it all but you will not be able to produce a functioning prototype quickly.  Creating many fast prototypes key to successful coding
+key to iterating through ideas until they work
+key to producing working apps which can be shipped in fast time.
