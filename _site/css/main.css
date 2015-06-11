@@ -189,10 +189,25 @@ pre {
       padding-left: 15px;
       padding-top: 20px; } }
 
+.wrapper-two {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: block; }
+  @media screen and (max-width: 800px) {
+    .wrapper-two {
+      max-width: -webkit-calc(1000px - (30px));
+      max-width: calc(1000px - (30px));
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 20px; } }
+
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after, .wrapper-two:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -556,3 +571,41 @@ pre {
 
 .blog-lockup {
   margin-top: 30px; }
+
+p.label {
+  padding-left: 0px; }
+
+.painter-options {
+  max-width: 1000px;
+  height: 40px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box; }
+  .painter-options .line-width {
+    float: left;
+    width: 50%; }
+    .painter-options .line-width .display-width {
+      float: left;
+      width: 20%;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .painter-options .line-width .buttons {
+      float: left;
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+      background: #777;
+      display: inline-block;
+      text-align: center; }
+  .painter-options .color-control {
+    float: right; }
+    .painter-options .color-control .color {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.5); }
+    .painter-options .color-control .color.active {
+      box-shadow: inset 0px 2px 2px white; }

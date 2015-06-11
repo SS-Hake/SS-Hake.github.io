@@ -6,9 +6,48 @@
 </description>
     <link>http://ss-hake.github.io/</link>
     <atom:link href="http://ss-hake.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jun 2015 13:15:48 +0100</pubDate>
-    <lastBuildDate>Sun, 07 Jun 2015 13:15:48 +0100</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2015 21:27:26 +0100</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2015 21:27:26 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Week 6</title>
+        <description>&lt;p&gt;I began the week with the creation of a very simple bookshelf app using AJAX and jQuery to display json data from a back-end.  This quickly turned into a full MEAN stack app as I discovered how much easier Angular makes everything when it comes to handling and displaying API data.&lt;/p&gt;
+
+&lt;p&gt;After this I moved on to finish the next responsive portfolio website, this one was created from a PSD design document I found, extracting the layers and positioning everything as it was on the design.  It’s been a good experience, I have become a lot more comfortable writing sass from memory, I also used the saved colour variables and mix-ins properly.  The only thing I haven’t really been able to recreate was the font, I could have used the text objects from the PSD, but I felt like that was missing the point a bit when it comes to practicing re-creation.&lt;/p&gt;
+
+&lt;p&gt;On top of this I started off a very simple Socket.io web chat app which was really fun, I want to mvoe on top more complex apps using sockets pretty quickly, I’ve seen some interesting things involving real time updates from twitter which I’d like to have a go at modifying.&lt;/p&gt;
+
+&lt;p&gt;Next week I want to create a few more node apps, I’ve read about the file system module, so I want to create something that records information to file, maybe something to do with socket.io and twitter as well.&lt;/p&gt;
+
+&lt;p&gt;After this I want to create a new site from PSD again, this time with the inclusion of some parallax or scroll effects, such as a static background or layers moving at different speeds.&lt;/p&gt;
+
+&lt;h3 id=&quot;primary&quot;&gt;Primary&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Write/read to/from file with node.&lt;/li&gt;
+  &lt;li&gt;Twitter integration with socket.io.&lt;/li&gt;
+  &lt;li&gt;Parallax effect site from PSD.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;secondary&quot;&gt;Secondary&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;First ThreeJS 3d canvas app.&lt;/li&gt;
+  &lt;li&gt;Two more 2d canvas apps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;reading&quot;&gt;Reading&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (continue from page 90)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 16:46:21 +0100</pubDate>
+        <link>http://ss-hake.github.io/week-6</link>
+        <guid isPermaLink="true">http://ss-hake.github.io/week-6</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>Week 5</title>
@@ -27,23 +66,37 @@
 
 &lt;h3 id=&quot;primary&quot;&gt;Primary&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;AJAX app from last week.&lt;/li&gt;
-  &lt;li&gt;Responsive site from PSD.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;AJAX app from last week.&lt;/s&gt;
+    &lt;p&gt;Turned into Bookshelf, on my github.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Responsive site from PSD.&lt;/s&gt;
+    &lt;p&gt;3-portfolio-PSD in “sites” on my github.&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;Hand styled Angular app.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;secondary&quot;&gt;Secondary&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Second responsive site.&lt;/li&gt;
-  &lt;li&gt;Host Seenit on heroku.&lt;/li&gt;
-  &lt;li&gt;Comment last week’s canvas apps.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Second responsive site.&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Host Seenit on heroku.&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Comment last week's canvas apps.&lt;/s&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;reading&quot;&gt;Reading&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (Start)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/andreis/interview&quot;&gt;Interesting interview prep/personal development list&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://thomasbyttebier.be/blog/the-best-ui-typeface-goes-unnoticed&quot;&gt;UI/Typeface article&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;[UI/Typeface article][4]&lt;/s&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 </description>

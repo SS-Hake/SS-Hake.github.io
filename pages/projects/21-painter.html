@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Painter"
+date: 2015-06-10
+permalink: projects/painter/
+---
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/assets/javascript/painter.js"></script>
+
+<p class="label">Click on the canvas to draw!</p>
+<div class="painter-options">
+	<div class="line-width">
+		<div class="display-width">Width: <span class="radius">8</span></div>
+		<div class="buttons radius-plus">+</div>
+		<div class="buttons radius-minus">-</div>
+	</div>
+	<div class="color-control">
+		<div class="color active" style="background-color: blue"></div>
+		<div class="color" style="background-color: purple"></div>
+		<div class="color" style="background-color: red"></div>
+		<div class="color" style="background-color: green"></div>
+	</div>
+</div>
+
+<canvas id='canvas' height="750" width = "1000" style="border: 1px solid black"></canvas>
