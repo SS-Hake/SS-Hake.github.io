@@ -11,20 +11,21 @@ $(document).ready(function () {
     //then evening, whatI have drarker blue purpoe and deep reds
 	console.log("[+] Drawing canvas...");
 
+    //Standard canvas setup.
 	var canvas = $('#canvas')[0];
 	var ctx = canvas.getContext('2d');
-
 	var height = $('#canvas').height();
     var width = $('#canvas').width();
-
+    //Grab the white canvas for reset on step.
     var canvasData = ctx.getImageData(0, 0, width, height);
-
+    //Draw a white canvas and black bounding box.
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, width, height);
     ctx.strokeStyle = "black";
     ctx.strokeRect(0, 0, width, height);
 
     var PlaneL = function() {
+        //Initialize the plane on the left with initial properties.
         this.xCoord = 0;
         this.yCoord = 0;
         this.xRate = 0;
@@ -32,32 +33,38 @@ $(document).ready(function () {
     };
 
     PlaneL.prototype.genStartPos = function() {
+        //Generates a starting position for the plane. 
+        //Along the left at a random but clamped height.
+        //Set the x coord to 0, it starts on the left.
         this.xCoord = 0;
+        //Set the y coord to a random number between the middle and 5/6 of the height.
         this.yCoord = (Math.random() * height / 2) + height / 6;
     }
 
     PlaneL.prototype.genRates = function() {
+        //Generate two random velocities and as such a random direction for the plane.
+        //Clamped such that it will only ever be a shallow climb.
         this.xRate = (Math.random() * 2.5) + 1;
         this.yRate = (Math.random() * 0.5) + 0;
     }
 
     PlaneL.prototype.move = function() {
+        //Add the rate of movement to the position to create movement.
         this.xCoord += this.xRate;
         this.yCoord -= this.yRate;
     }
 
     PlaneL.prototype.draw = function(counter) {
-
+        //Draw the plane.
         ctx.beginPath();
         ctx.fillStyle = "#ccc";
         /*ctx.arc(x, y, 2, 0, Math.PI * 2, true);*/
         ctx.rect(this.xCoord, this.yCoord, 5, 2);
         ctx.fill();
         ctx.closePath();
-
         if(counter % 40 == 0) {
+            //At set intervals draw a green and red box to imitate flashing navigation lights.
             //Green brighter as right hand side of plane is towards screen.
-
             console.log("[+] Green " + counter);
             ctx.beginPath();
             ctx.fillStyle = "#339933"; /*"#AB5C78";*/
@@ -66,7 +73,6 @@ $(document).ready(function () {
             ctx.fill();
             ctx.closePath();
         } else if (counter % 20 == 0) {
-
             console.log("[+] Red " + counter);
             ctx.beginPath();
             ctx.fillStyle = "#FF5050";
@@ -78,6 +84,7 @@ $(document).ready(function () {
     }
     //
     var Satellite = function() {
+        //Initialise a satellite object - like the plane but smaller and no nav lights.
         this.xCoord = 0;
         this.yCoord = 0;
         this.xRate = 0;
@@ -85,26 +92,30 @@ $(document).ready(function () {
     };
 
     Satellite.prototype.genStartPos = function() {
-        this.xCoord = 1000;
+        //Generate a start position, on the right of the screen at a random, clamped height near the top.
+        this.xCoord = width;
         this.yCoord = (Math.random() * height / 4) + 0;
     }
 
     Satellite.prototype.genRates = function() {
+        //Random like the plane, but could be shallow climb or decent.
         this.xRate = (Math.random() * 1) + 0.5;
         this.yRate = (Math.random() * 1.5) + -1;
     }
 
     Satellite.prototype.genVisRange = function() {
-
+        //TODO: Add visibility to simulate iridium flares.
+        //TODO: make it work on shooting stars too.
     }
 
     Satellite.prototype.move = function() {
+        //Movement as with the plane.
         this.xCoord -= this.xRate;
         this.yCoord -= this.yRate;
     }
 
     Satellite.prototype.draw = function(counter) {
-
+        //At set intervals draw different boxes to simulate shimmer through the atmosphere.
         if(counter % 2 == 0) {
 
             ctx.beginPath();
@@ -125,6 +136,7 @@ $(document).ready(function () {
     }
 
     var ShootingStar = function() {
+        //Shooting star is a lot like the satellite but faster.
         this.xCoord = 0;
         this.yCoord = 0;
         this.xRate = 0;
@@ -151,6 +163,7 @@ $(document).ready(function () {
 
         if(/*counter % 2 == 0 &&*/ this.yCoord < height / 2) {
             //console.log("This.XCoord:" + this.xCoord);
+            //TODO figure out the rotation to make it fly sideways.
             console.log("This.YCoord:" + this.yCoord);
             ctx.save();
             ctx.beginPath();
@@ -172,7 +185,7 @@ $(document).ready(function () {
     var y = 400;
 
     var counter = 0;
-
+    //Generate all of the position arrays.
     var starTopPosX = [];
     var starTopPosY = [];
     var starAlphaPosX = [];
@@ -189,9 +202,9 @@ $(document).ready(function () {
     }
 
     function drawStarAlpha(x, y, counter) {
-
+        //Draw the smallest stars near the top
         if(counter % 2 == 0) {
-
+            //Counter interval makes them twinkle.
             ctx.beginPath();
             ctx.fillStyle = "#ccc";
             ctx.rect(x - 0.5, y - 0.5, 1, 1);
@@ -231,7 +244,7 @@ $(document).ready(function () {
     }    
 
     function drawPlanet(x, y, counter) {
-
+        //Draw larger twinkling stars to simulate planets.
         if(counter % 2 == 0) {
 
             ctx.beginPath();
@@ -251,7 +264,9 @@ $(document).ready(function () {
     }
 
     function generatePos(xArray, yArray, lowBound, upBound, quantity) {
-
+        //Generate the starting position for the background stars and planets.
+        //Takes params becuase the stars and planets are generated at different quadrants 
+        //to simulate the higher frequency of stars away from the horizon.
         for(var i = 0; i < quantity; i++) {
             xArray[i] = Math.floor(Math.random() * width) + 0;
             yArray[i] = Math.floor(Math.random() * upBound) + lowBound;
@@ -262,14 +277,15 @@ $(document).ready(function () {
     function init() {
 
         console.log("[+] Init...");
-
+        //Generate all of the background positions.
         generatePos(starTopPosX, starTopPosY, 0, height / 4, 25);
         generatePos(starAlphaPosX, starAlphaPosY, 0, height / 2, 25);
         generatePos(starBetaPosX, starBetaPosY, 0, height / 2, 25);
         generatePos(planetPosX, planetPosY, 0, height / 1.2, 8);
 
         generatePos(starMidPosX, starMidPosY, height / 2, height / 1.1, 20);
-
+        //Initialize all of the moving objects.
+        //TODO: concatenate these.
         PlaneLeft = new PlaneL();
 
         PlaneLeft.genStartPos();
@@ -295,8 +311,8 @@ $(document).ready(function () {
     init();
 
     function drawFromArray(xArray, yArray, funcName, counter) {
-
-        for(var i = 0; i < xArray.length; i++) {
+        //Iterate through the star arrays for drawing purposes.
+        for(var i = 0; i < xArray.length; i++) {   
             funcName(xArray[i], yArray[i], counter);
         }
     }
@@ -304,15 +320,15 @@ $(document).ready(function () {
     //Loop
     setInterval(function() {
     	counter += 1;
-
+        //Redraw white for new step.
 	    updateCanvas();
-
+        //Iterate through all of the stars.
         drawFromArray(starTopPosX, starTopPosY, drawStarAlpha, counter);
         drawFromArray(starAlphaPosX, starAlphaPosY, drawStarAlpha, counter);
         drawFromArray(starBetaPosX, starBetaPosY, drawStarBeta, counter);
         drawFromArray(planetPosX, planetPosY, drawPlanet, counter);
         drawFromArray(starMidPosX, starMidPosY, drawStarAlpha, counter);
-
+        //Move and draw the moving objects.
         PlaneLeft.move();
         PlaneLeft.draw(counter);
 
@@ -322,7 +338,7 @@ $(document).ready(function () {
         //ShootStar.move();
         //ShootStar.draw();
 
-
+        //Clamp the moving obejcts and redraw when they leave screen.
 	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
             console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();
