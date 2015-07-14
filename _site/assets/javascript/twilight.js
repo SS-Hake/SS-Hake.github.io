@@ -338,7 +338,7 @@ $(document).ready(function () {
         //ShootStar.move();
         //ShootStar.draw();
 
-        //Clamp the moving obejcts and redraw when they leave screen./
+        //Clamp the moving obejcts and redraw when they leave screen.
 	    if(PlaneLeft.xCoord > ((Math.random() * (width * 4)) + 1000) || PlaneLeft.yCoord < -200) { 
             console.log(PlaneLeft.xCoord);
             PlaneLeft.genStartPos();

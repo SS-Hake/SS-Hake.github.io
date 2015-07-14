@@ -9,7 +9,7 @@ var geometry = new THREE.BoxGeometry(1, 1, 1);
 var material = new THREE.MeshBasicMaterial({color: 0x0066ff});
 var cube = new THREE.Mesh(geometry, material);
 
-var secondGeometry = new THREE.BoxGeometry(1, 1, 1);
+var secondGeometry = new THREE.BoxGeometry(1, 1, 1);  
 var secondMaterial = new THREE.MeshBasicMaterial({color: 0x00cc00});
 var secondCube = new THREE.Mesh(secondGeometry, secondMaterial);
 scene.add(cube);
@@ -25,4 +25,4 @@ function render() {
 
 	renderer.render(scene, camera);
 }
-render();
+render();                                       

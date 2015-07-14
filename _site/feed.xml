@@ -6,9 +6,28 @@
 </description>
     <link>http://ss-hake.github.io/</link>
     <atom:link href="http://ss-hake.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jun 2015 23:50:53 +0100</pubDate>
-    <lastBuildDate>Sat, 13 Jun 2015 23:50:53 +0100</lastBuildDate>
+    <pubDate>Tue, 14 Jul 2015 16:36:20 +0100</pubDate>
+    <lastBuildDate>Tue, 14 Jul 2015 16:36:20 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Week 7</title>
+        <description>&lt;p&gt;Work slowed down a bit because I have been onholiday, so this blog covers from around the 13th of June to the 05th of July.&lt;/p&gt;
+
+&lt;p&gt;I have almost finished a whole twitter-like social app in the MEAN stack.  I need to finish it off with a few things like remembering users and testing.&lt;/p&gt;
+
+&lt;p&gt;I have also completed the small twitter listing app, some Three JS projects and some more 2d canvas apps to keep my hand in on the front end side of things.&lt;/p&gt;
+
+&lt;p&gt;Next i would like to work on finishing the parallax site I began but didn’t finish before my holiday, and then work on&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Jul 2015 16:46:21 +0100</pubDate>
+        <link>http://ss-hake.github.io/week-7</link>
+        <guid isPermaLink="true">http://ss-hake.github.io/week-7</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>Week 6</title>
@@ -16,7 +35,7 @@
 
 &lt;p&gt;After this I moved on to finish the next responsive portfolio website, this one was created from a PSD design document I found, extracting the layers and positioning everything as it was on the design.  It’s been a good experience, I have become a lot more comfortable writing sass from memory, I also used the saved colour variables and mix-ins properly.  The only thing I haven’t really been able to recreate was the font, I could have used the text objects from the PSD, but I felt like that was missing the point a bit when it comes to practicing re-creation.&lt;/p&gt;
 
-&lt;p&gt;On top of this I started off a very simple Socket.io web chat app which was really fun, I want to mvoe on top more complex apps using sockets pretty quickly, I’ve seen some interesting things involving real time updates from twitter which I’d like to have a go at modifying.&lt;/p&gt;
+&lt;p&gt;On top of this I started off a very simple Socket.io web chat app which was really fun, I want to move on top more complex apps using sockets pretty quickly, I’ve seen some interesting things involving real time updates from twitter which I’d like to have a go at modifying.&lt;/p&gt;
 
 &lt;p&gt;Next week I want to create a few more node apps, I’ve read about the file system module, so I want to create something that records information to file, maybe something to do with socket.io and twitter as well.&lt;/p&gt;
 
