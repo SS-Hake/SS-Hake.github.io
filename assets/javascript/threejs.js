@@ -42,6 +42,21 @@ camera.position.z = 300;
 scene.add(camera);
 document.body.appendChild(renderer.domElement);
 
+var axes = new THREE.AxisHelper(20);
+scene.add(aces);
+
+//Plane - ground
+var planeGeometry = new THREE.PlaneGeometry(60, 20);
+var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+
+plane.rotation.x = -0.5 * Math.PI;
+plane.rotation.x = 15;
+plane.rotation.y = 0;
+plane.rotation.z = 0;
+
+scene.add(plane);
+
 var sphere = new THREE.Mesh(
 	new THREE.SphereGeometry(
 		radius,
