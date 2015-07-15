@@ -12,6 +12,7 @@ nav:
 
 #Projects
 projects:
+- {title: Threejs, date: 22/6/15, url: /projects/threejs, blurb: 'An odd Dr Who inspired animation.'}
 - {title: Hypnotiser, date: 20/6/15, url: /projects/hypnotiser, blurb: 'An odd Dr Who inspired animation.'}
 - {title: Tumbling Shapes, date: 11/06/15, url: /projects/tumbling-shapes, blurb: 'Tumbling shapes in ThreeJS.'}
 - {title: Painter - WIP, date: 10/06/15, url: /projects/painter, blurb: 'Paint app with color and size options.'}
