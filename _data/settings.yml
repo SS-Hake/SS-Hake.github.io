@@ -12,6 +12,7 @@ nav:
 
 #Projects
 projects:
+- {title: Shapes and camera testing, date: 20/06/26, url: /projects/shape-test, blurb: 'Testing shapes and cameras in Three.js.'}
 - {title: Threejs, date: 22/6/15, url: /projects/threejs, blurb: 'An odd Dr Who inspired animation.'}
 - {title: Hypnotiser, date: 20/6/15, url: /projects/hypnotiser, blurb: 'An odd Dr Who inspired animation.'}
 - {title: Tumbling Shapes, date: 11/06/15, url: /projects/tumbling-shapes, blurb: 'Tumbling shapes in ThreeJS.'}

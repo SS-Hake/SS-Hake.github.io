@@ -115,20 +115,30 @@ renderer.render(scene, camera);
 //Rendering function
 
 var step = 0;
-renderScene();
 
-function renderScene() {
+var controls = new function() {
+	this.rotationSpeed = 0.02;
+	this.bouncingSpeed = 0.03;
+};
+
+var gui = new dat.GUI();
+gui.add(controls, 'rotationSpeed', 0, 0.5);
+gui.add(controls, 'bouncingSpeed', 0, 0.5);
+
+render();
+
+function render() {
 	stats.update();
 	//Rotation.
-	cube.rotation.x += 0.02;
-	cube.rotation.y += 0.02;
-	cube.rotation.z += 0.02;
+	cube.rotation.x += controls.rotationSpeed;
+	cube.rotation.y += controls.rotationSpeed;
+	cube.rotation.z += controls.rotationSpeed;
 
-	step += 0.04;
+	step += controls.bouncingSpeed;
 	sphere.position.x = 20 + (10 * (Math.cos(step)));
 	sphere.position.y = 2 + (10 * Math.abs(Math.sin(step)));
 
-	requestAnimationFrame(renderScene);
+	requestAnimationFrame(render);
 	renderer.render(scene, camera);
 }
 
@@ -142,7 +152,7 @@ function initStats() {
 	stats.domElement.style.top = '0px';
 
 	document.body.appendChild(stats.domElement);
-	
+
 
 	return stats;
 }
