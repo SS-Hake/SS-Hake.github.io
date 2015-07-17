@@ -4,6 +4,8 @@ $(document).ready(function() {
 	//var stats = initStats();
 	//Initialise a new THREEjs scene.
 	var scene = new THREE.Scene();
+	scene.fog = new THREE.Fog( 0xFFFFFF, 0.015, 100 );
+	scene.overrideMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
 	//Initialise a new camera with the aspect ratio of the HTML element.
 	//Add it to scene.
@@ -62,18 +64,76 @@ $(document).ready(function() {
 			var lastObject = allChildren[allChildren.length - 1];
 
 			if(lastObject instanceof THREE.Mesh) {
-				scene.remote(lastObject);
+				scene.remove(lastObject);
 				this.numberOfObjects = scene.children.length;
 			}
 		};
 
 		this.addCube = function() {
+			//Cube initialised 
 			var cubeSize = Math.ceil((Math.random() * 3));
 			var cubeGeometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
 			var cubeMaterial = new THREE.MeshLambertMaterial({color: Math.random() * 0xFFFFFF});
 			var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 			cube.castShadow = true;
 			cube.name = "cube-" + scene.children.length;
+
+			//Cube positioned
+			//random value clamped within plane width
+			cube.position.x = -30 + Math.round((Math.random() * planeGeometry.parameters.width));
+			//Random height up to 5 in y
+			cube.position.y = Math.round((Math.random() * 5));
+			//Random value clamped within length of the plane.
+			cube.position.z = -20 + Math.round((Math.random() * planeGeometry.parameters.height));
+
+			scene.add(cube);
+			//Update object count.
+			this.numberOfObjects = scene.children.length;
 		}
+
+		this.outputObjects = function() {
+			console.log(scene.children);
+		}
+
+	}
+
+	var gui = new dat.GUI();
+
+	gui.add(controls, 'rotationSpeed', 0, 0.5);
+	gui.add(controls, 'addCube');
+	gui.add(controls, 'removeCube');
+	gui.add(controls, 'outputObjects');
+	gui.add(controls, 'numberOfObjects').listen();
+
+	render();
+
+	function render() {
+
+		//stats.update();
+
+		scene.traverse(function(e) {
+			if(e instanceof THREE.Mesh && e != plane) {
+				e.rotation.x += controls.rotationSpeed;
+				e.rotation.y += controls.rotationSpeed;
+				e.rotation.z += controls.rotationSpeed;
+			}
+		});
+
+		requestAnimationFrame(render);
+		renderer.render(scene, camera);
+	}
+
+	function initStats() {
+		var stats = new Stats();
+
+		stats.setMode(0);
+
+		stats.domElement.style.postition = 'absolute';
+		stats.domElement.style.left = '0px';
+		stats.domElement.style.top = '0px';
+
+		$('#stats').appendChild(stats.domElement);
+
+		return stats;
 	}
 });
