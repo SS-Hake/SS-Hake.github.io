@@ -12,6 +12,7 @@ nav:
 
 #Projects
 projects:
+- {title: Orthographic camera, date: 26/06/15, url: /projects/ortho-camera, blurb: 'Using camera modes in threejs'}
 - {title: Shapes and camera testing, date: 25/06/26, url: /projects/shape-test, blurb: 'Testing shapes and cameras in Three.js.'}
 - {title: Threejs, date: 22/6/15, url: /projects/threejs, blurb: 'An animated ball and cube.'}
 - {title: Hypnotiser, date: 20/6/15, url: /projects/hypnotiser, blurb: 'An odd Dr Who inspired animation.'}
