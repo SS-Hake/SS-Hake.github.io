@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//Initialise the stat tracking library.
-	//var stats = initStats();
+	var stats = initStats();
 	//Initialise a new THREEjs scene.
 	var scene = new THREE.Scene();
 	scene.fog = new THREE.Fog( 0xFFFFFF, 0.015, 100 );
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	renderer.shadowMapEnabled = true;
 
 	//Create a white plane which will form the ground in the scene.
-	var planeGeometry = new THREE.PlaneGeometry(60, 40, 1, 1);
+	var planeGeometry = new THREE.PlaneBufferGeometry(60, 40, 1, 1);
 	var planeMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 	var plane = new THREE.Mesh( planeGeometry, planeMaterial);
 	plane.recieveShadow = true;
@@ -51,7 +51,7 @@ $(document).ready(function() {
 	scene.add(spotLight);
 
 	//Add the output to the page.
-	document.body.appendChild(renderer.domElement);
+	$('#output').append(renderer.domElement);
 
 	var step = 0;
 
@@ -98,7 +98,7 @@ $(document).ready(function() {
 	}
 
 	var gui = new dat.GUI();
-
+	//Add controls and list their respective values.
 	gui.add(controls, 'rotationSpeed', 0, 0.5);
 	gui.add(controls, 'addCube');
 	gui.add(controls, 'removeCube');
@@ -110,7 +110,7 @@ $(document).ready(function() {
 	function render() {
 
 		//stats.update();
-
+		stats.begin();
 		scene.traverse(function(e) {
 			if(e instanceof THREE.Mesh && e != plane) {
 				e.rotation.x += controls.rotationSpeed;
@@ -121,6 +121,7 @@ $(document).ready(function() {
 
 		requestAnimationFrame(render);
 		renderer.render(scene, camera);
+		stats.end();
 	}
 
 	function initStats() {
@@ -128,11 +129,7 @@ $(document).ready(function() {
 
 		stats.setMode(0);
 
-		stats.domElement.style.postition = 'absolute';
-		stats.domElement.style.left = '0px';
-		stats.domElement.style.top = '0px';
-
-		$('#stats').appendChild(stats.domElement);
+		$('#stats').append(stats.domElement);
 
 		return stats;
 	}

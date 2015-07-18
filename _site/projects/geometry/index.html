@@ -8,12 +8,12 @@
 
   <link rel="icon" type="image/png" href="../favicon.png">
 
-  <title>Projects</title>
+  <title>Geometry</title>
   <meta name="description" content="The personal blog of Sam Scott-Hake.
 ">
   <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ss-hake.github.io/project-list/">
+  <link rel="canonical" href="http://ss-hake.github.io/projects/geometry/">
   <link rel="alternate" type="application/rss+xml" title="Hake Blog" href="http://ss-hake.github.io/feed.xml" />
 
 </head>
@@ -123,233 +123,37 @@
     <div class="page-content">
       <div class="wrapper-two">
 
-      	<div class="post wrapper">
+      	<div class="post">
 
   <div class="post-header">
-    <h1 class="post-title">Projects</h1>
-    <p class="post-meta"></p>
+    <h1 class="post-title">Geometry</h1>
   </div>
 
   <article class="post-content">
-    <ul id="blog-list-container">
-	
-	    <li>
-	      <span class="post-meta">28/06/15</span>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.js"></script>
+<script src="/assets/javascript/geometry.js"></script>
 
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/geometry">Snake</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">26/06/15</span>
+<style type="text/css">
+	canvas {
+		width: 1000;
+		height: 1000;
+		margin: 0px auto
+	}
+</style>
 
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/ortho-camera">Orthographic camera</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">25/06/26</span>
+<div id="controls">
+</div>
+<div id="stats">
+</div>
+<div id="output">
+</div>
 
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/shape-test">Shapes and camera testing</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">22/6/15</span>
 
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/threejs">Threejs</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">20/6/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/hypnotiser">Hypnotiser</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">11/06/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/tumbling-shapes">Tumbling Shapes</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">10/06/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/painter">Painter - WIP</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">03/06/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/spirograph">Spirograph</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">29/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/seenit-angular">Seenit Angular</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">26/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/shoal">Shoal</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">25/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/coloured-fireflies">Coloured Fireflies</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">25/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/coloured-liquid">Coloured Liquid</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">23/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/dom-traversal">jQuery DOM Paractice</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">20/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/music-player">Music Player</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">19/05/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/angular-store">Angular Store</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">25/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/twilight">Twilight</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">24/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/angular-test">Angular Test</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">23/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/particles-test">Particles Test</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">23/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/canvas-clock">Cavcas Clock</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">21/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/snake">Snake</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">20/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/throwing-squares">Throwing Squares</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">17/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/blinking-squares">Blinking Squares</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">16/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/colour-clock">Colour Clock</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">14/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/birthday-facts">Birthday Facts</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">10/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/animator">Animator</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">09/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/day-counter">Day Counter</a>
-	      </h2>
-	    </li>
-	
-	    <li>
-	      <span class="post-meta">08/04/15</span>
-
-	      <h2>
-	        <a class="post-link" href="http://ss-hake.github.io/projects/squares">Squares</a>
-	      </h2>
-	    </li>
-	
-</ul>
+<!-- <canvas id='canvas' height="750" width = "1000" style="border: 1px solid black"></canvas> -->
+    
   </article>
 
 </div>
