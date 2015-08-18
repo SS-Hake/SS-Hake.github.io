@@ -13,12 +13,13 @@ $(document).ready(function() {
 	webGLRenderer.setSize(width, height);
 	webGLRenderer.shadowMapEnabled = true;
 
-	var circle = createMesh(new THREE.CircleGeometry(15, 10, 0.3 * Math.PI * 2, 0.3 * Math.PI * 2));
+	var circle = createMesh(new THREE.CircleGeometry(5, 10, 0.3 * Math.PI * 2, 0.3 * Math.PI * 2));
 	scene.add(circle);
 	var cube = new createMesh(new THREE.BoxGeometry(5, 5, 5, 1, 1, 1));
+	cube.position.y = -10;
 	scene.add(cube);
 	//Position and aim camera.
-	camera.position.x = -10;
+	camera.position.x = -40;
 	camera.position.x = 30;
 	camera.position.x = 40;
 	camera.lookAt(new THREE.Vector3( 10, 0, 0 ));
@@ -33,7 +34,7 @@ $(document).ready(function() {
 	var controls = new function() {
 		//Handles the variables and redrawing when user changes values in control panel.
 		//Disc geometry variables.
-		this.radius = 15;
+		this.radius = 5;
 		this.thetaStart = 0.3 * Math.PI * 2;
 		this.thetaLength = 0.3 * Math.PI * 2;
 		this.segments = 10;
@@ -54,6 +55,7 @@ $(document).ready(function() {
 			scene.remove(cube);
 			cube = createMesh(new THREE.BoxGeometry(controls.cubeWidth, controls.cubeHeight, controls.cubeDepth,
 				Math.round(controls.widthSegments), Math.round(controls.heightSegments), Math.round(controls.depthSegments)));
+			cube.position.y = -10;
 			scene.add(cube);
 		};
 	};

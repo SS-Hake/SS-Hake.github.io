@@ -568,6 +568,8 @@ pre {
   .news-section .project-loop .project-details {
     width: 300px;
     display: inline-block; }
+    .news-section .project-loop .project-details .project-blurb {
+      height: 48px; }
 
 .blog-lockup {
   margin-top: 30px; }

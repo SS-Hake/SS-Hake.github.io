@@ -12,6 +12,7 @@ nav:
 
 #Projects
 projects:
+- {title: Quiz, date: 26/08/18, url: /projects/quiz, blurb: 'A quiz app for /r/learnjstogether.'}
 - {title: Threejs Geometry, date: 28/06/15, url: /projects/geometry, blurb: 'Use the controls to build shapes.'}
 - {title: Threejs Camera, date: 26/06/15, url: /projects/ortho-camera, blurb: 'Using camera modes in threejs'}
 - {title: Shapes and camera testing, date: 25/06/26, url: /projects/shape-test, blurb: 'Testing shapes and cameras in Three.js.'}

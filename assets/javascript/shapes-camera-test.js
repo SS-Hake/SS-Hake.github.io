@@ -4,7 +4,9 @@ $(document).ready(function() {
 	var stats = initStats();
 	//Initialise a new THREEjs scene.
 	var scene = new THREE.Scene();
+	//Add some eerie fog.
 	scene.fog = new THREE.Fog( 0xFFFFFF, 0.015, 100 );
+	//Override all object materials to be non-shiny.
 	scene.overrideMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
 	//Initialise a new camera with the aspect ratio of the HTML element.
@@ -25,13 +27,12 @@ $(document).ready(function() {
 	var planeGeometry = new THREE.PlaneBufferGeometry(60, 40, 1, 1);
 	var planeMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 	var plane = new THREE.Mesh( planeGeometry, planeMaterial);
+	//Set it to show the shadows from the cubes, rotate it to be "flat" in scene and position at origin.
 	plane.recieveShadow = true;
-
 	plane.rotation.x = -0.5 * Math.PI;
 	plane.position.x = 0;
 	plane.position.y = 0;
 	plane.position.z = 0;
-
 	scene.add(plane);
 
 	//position the camera.

@@ -6,28 +6,9 @@
 </description>
     <link>http://ss-hake.github.io/</link>
     <atom:link href="http://ss-hake.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Jul 2015 23:58:31 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Jul 2015 23:58:31 +0100</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2015 15:30:16 +0100</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2015 15:30:16 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
-    
-      <item>
-        <title>Week 7</title>
-        <description>&lt;p&gt;Work slowed down a bit because I have been onholiday, so this blog covers from around the 13th of June to the 05th of July.&lt;/p&gt;
-
-&lt;p&gt;I have almost finished a whole twitter-like social app in the MEAN stack.  I need to finish it off with a few things like remembering users and testing.&lt;/p&gt;
-
-&lt;p&gt;I have also completed the small twitter listing app, some Three JS projects and some more 2d canvas apps to keep my hand in on the front end side of things.&lt;/p&gt;
-
-&lt;p&gt;Next i would like to work on finishing the parallax site I began but didn’t finish before my holiday, and then work on&lt;/p&gt;
-</description>
-        <pubDate>Sun, 05 Jul 2015 16:46:21 +0100</pubDate>
-        <link>http://ss-hake.github.io/week-7</link>
-        <guid isPermaLink="true">http://ss-hake.github.io/week-7</guid>
-        
-        
-        <category>weekly</category>
-        
-      </item>
     
       <item>
         <title>Week 6</title>
