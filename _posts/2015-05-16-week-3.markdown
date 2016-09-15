@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 3"
 date: 2015-05-16 15:46:21
 categories: weekly
 permalink: week-3
----
+--- -->
 
 What I was trying to avoid has happened; my side projects have reverted to dribs and drabs of work again.  The two weeks of one page a day went well but, I quickly ran out of smaller ideas and moved onto larger ones which have become disjointed.
 

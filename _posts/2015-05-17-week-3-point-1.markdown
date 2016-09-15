@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 3.1"
 date: 2015-05-17 15:46:21
 categories: weekly
 permalink: week-3.1
----
+--- -->
 
 I've finished the majority of the portfolio site I have been working on.  As I finish it off I will host it over at [BuntingfordComputing.co.uk][1], the domain and host I use as a test bed for new sites I create.
 

@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 1"
 date: 2015-05-07 15:45:21
 categories: weekly
 permalink: week-1
----
+--- -->
 
 First published: 18/04/15.
 

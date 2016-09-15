@@ -1,10 +1,10 @@
 ---
-layout: post
+<!-- layout: post
 title: "Week 6"
 date: 2015-06-01 15:46:21
 categories: weekly
 permalink: week-6
----
+--- -->
 
 I began the week with the creation of a very simple bookshelf app using AJAX and jQuery to display json data from a back-end.  This quickly turned into a full MEAN stack app as I discovered how much easier Angular makes everything when it comes to handling and displaying API data.  
 

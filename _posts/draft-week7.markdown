@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 7"
 date: 2015-07-05 15:46:21
 categories: weekly
 permalink: week-7
----
+--- -->
 
 Work slowed down a bit because I have been onholiday, so this blog covers from around the 13th of June to the 05th of July.
 

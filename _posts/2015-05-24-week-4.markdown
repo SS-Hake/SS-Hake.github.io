@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 4"
 date: 2015-05-24 15:46:21
 categories: weekly
 permalink: week-4
----
+--- -->
 
 This week I learned that writing up an MSc thesis is lot harder than I thought it would be; I spend 99% of my time reading papers I read 12 months 
 earlier, 0.5% of my time writing, and 0.5% of my time re-writing the little I have written.

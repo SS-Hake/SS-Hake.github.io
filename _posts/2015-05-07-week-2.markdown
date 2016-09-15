@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Week 2"
 date: 2015-05-07 15:46:21
 categories: weekly
 permalink: week-2
----
+--- -->
 
 This week centred around the creation of a few more jQuery apps, testing out Angular with a simple one page app, and the prototype of a small javascript library I would like to publish named Twilight.
 

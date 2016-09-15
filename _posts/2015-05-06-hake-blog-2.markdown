@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: post
 title: "Hake Blog v2.0"
 date: 2015-05-06 17:56:31
 categories: update
 permalink: updated-blog.html
----
+--- -->
 Welcome to the new Hake Blog!
 
 I've finally upgraded to a content management system; Jekyll.  I had been looking at other CMSs for a while but none of them seemed that applicable to a site of this size and structure.  I have used Ruby on Rails and Wordpress before, but they seemed too bukly for use on this site.  
