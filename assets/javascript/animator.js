@@ -22,10 +22,13 @@ $(document).ready(function () {
 
 		//Add the animation to the selected box.
 		$(boxs).addClass(anim);
-
 		//Remove the animation after a full cycle.
 		setTimeout(function () {
 			$(boxs).removeClass(anim);
 		}, 2100);
 	});
+
+	function mutation(arr) {
+
+		tion(["hello", "hyllo"]));
 });
