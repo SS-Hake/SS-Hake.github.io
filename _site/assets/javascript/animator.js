@@ -30,9 +30,5 @@ $(document).ready(function () {
 
 	function mutation(arr) {
 
-		
-		
-	}
-
-	console.log(mutation(["hello", "hyllo"]));
+		tion(["hello", "hyllo"]));
 });
