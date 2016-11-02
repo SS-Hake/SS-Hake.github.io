@@ -74,7 +74,7 @@ Plastic collapsible water bottles are a great idea.  Water is one of those thing
 
 Platypus SoftBottle *TM collapsile hydration system.  A complex name for a simple object, a plastic bag with a sports cap glued on.  These things are anything up to £14 on amazon.co.uk and the cap *alone* is £5.  Perhaps these collapsible bottles are astonishingly durable and warrant the price tag, but I have a feeling I'll be able to snag a comparable experience with a bottle less than one fifth the price on Aliexpress, direct from the chinese factory or wholesaler!
 
-Sandly, one of the bottles I ordered to review arrived with a small tear in either side.  This was a shame, but also provided a chance to test the Aliexpress 
+Sadly, one of the bottles I ordered to review arrived with a small tear in either side.  This was a shame, but also provided a chance to test the Aliexpress 
 
 #The selection
 
@@ -131,3 +131,47 @@ I bought my first headtorch a year ago, I have since lent and showed it to a ran
 You see this all the time with knives
 Buying cheap now doesn't mean you can't upgrade down the line.  It doesn't mean this cheap purchase is wasted money, you'll learn a lot from owning and using the cheap item, and will be more able to allocate spending on more expensive versions down the line, once you know what you want.
 Expensive camping equipment tends to be specialised, it is made for a specific area or type of outdoor person
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Water bottles
+
+For those of you that haven't heard of or used Aliexpress before, it's essentially chinese amazon, it puts you directly in contact with the chinese factories and wholesalers which produce or supply a vast range of products to the western sellers you usually find on Amazon and Ebay.  There are also some products you can't find anywhere else.
+
+
+Water bottles and expense
+
+Aliexpress and why
+
+reviews
+
+one arrived with hole
+
+overall experience
+
+
+###Ideas
+wild camping tips, where to go, when, scouting, etc
+wild camping, eating and cooking
+wild camping, fires
+wild camping, other cooking systems, meths, gas, etc
+basic wild camping kit basic comfortable night in the woods
+biting insects and repellents, what works what doesnt
+mushrooms, what we have found successfully and easily
+foraging, getting into the mindset
+foraging, realistic, substantial meals
+
+
