@@ -1,0 +1,40 @@
+<!-- ---
+layout: post
+title: "Week 5"
+date: 2015-06-01 15:46:21
+categories: weekly
+permalink: week-5
+---
+ -->
+A belated blog post this week, it took me until now to finish the MEAN stack tutorial I had been using.  My coding experience has taught me not to expect to do anything correctly the first time, so I have just soldiered through the errors and issues I was stuck on throughout the creation of my first app.
+
+I began the week with a few more jQuery canvas apps to keep my hand in, before moving on to the creation of a "Hacker News" clone with persistent data and full functioning comments/upvote system.  I've learned the basics of node routing as well as putting what I had learned about linking APIs to Angular applications with services into practice.
+
+Due to the time extension for the completing "[Seenit][1]", I have pushed one goal from last week, creating a simple AJAx app with functiong back-end, to next week. It'll be my first task and should only take a couple of hours, if that.
+
+Next week I also plan to create another responsive site from a PSD document.  I have found quite a nice site which provides detailed photoshop documents, which I can open with GIMP, called [Designscrazed][2].   I want to make quite a few of these over the next month or so because I have heard that this will be the sort of thing I will be doing as a junior web developer.  It will mean I can practice more SASS usage, I need to focus on creating a more efficient workspace, complete with proper mixin usage.
+
+My third and final task this week is to create and style the frontend for a store angular appliation, this will combine two areas of research, SASS usage, and Angular app creation.  Most of the Angular applications I have seen so far just use bootstrap, I presume for speed's sake, but I would like to hand style one just to solidify my learning so far.
+
+##Next Week's Goals
+Finish and host the Seenit news app from last week, and move on to a simple AJAX application for practice's sake.  Create one, possibly two responsive websites from PSD documents.  Consolidate learning with a hand styled angular store app.
+
+###Primary
+- <s>AJAX app from last week.</s> Turned into Bookshelf, on my github.
+- <s>Responsive site from PSD.</s> 3-portfolio-PSD in "sites" on my github.
+- Hand styled Angular app.
+
+###Secondary
+- <s>Second responsive site.</s>
+- <s>Host Seenit on heroku.</s> 
+- <s>Comment last week's canvas apps.</s>
+
+###Reading
+- Clean Code: A Handbook of Agile Software Craftmanship, Robert C. Martin. (Start)
+- [Interesting interview prep/personal development list][3]
+- <s>[UI/Typeface article][4]</s>
+
+[1]: https://github.com/SS-Hake/Seenit
+[2]: http://designscrazed.org/free-photoshop-psd-website-templates/
+[3]: https://github.com/andreis/interview
+[4]: http://thomasbyttebier.be/blog/the-best-ui-typeface-goes-unnoticed

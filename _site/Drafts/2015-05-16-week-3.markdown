@@ -1,0 +1,23 @@
+<!-- ---
+layout: post
+title: "Week 3"
+date: 2015-05-16 15:46:21
+categories: weekly
+permalink: week-3
+--- -->
+
+What I was trying to avoid has happened; my side projects have reverted to dribs and drabs of work again.  The two weeks of one page a day went well but, I quickly ran out of smaller ideas and moved onto larger ones which have become disjointed.
+
+This week I started work on a second Jekyll site (after creating this one) which uses sass and a css library I haven't used before called bourbon.  I created the site to showcase an artists portfolio and I have learned a lot about the design aspect of web-design in the process, coming from a solely programming background is was almost all new to me.  I plan to finish the site and get it hosted tomorrow, it will become the first of many I will be able to showcase if I turn my hand to freelance web-design in the future.
+
+Over the next week I want to start creating smaller javascript apps again to keep my hand in with jQuery and Angular.  I'd like to create a small store page with JSON data displayed with Angular controllers.
+
+Later in the week I will move back to the design aspect and complete a few tutorials I have found for some of the more complex aesthetics I have seen around the web.  These will hopefully include the paralax effect and some more fiddly sass.
+
+On the backburner I need to work out how to properly host a ruby on rails app with cPanel.  It's a bit ridiculous that I can now create a fully function ruby on rails application, but I can't host it on anything other than the painfully slow heroku free service.  I must be overthinking it because I know it can be done, I just havent read enough yet... Once I get it up and running on my faster server, I'll be able to get my teeth into persistent data and much more interesting apps.
+
+##Checklist for the week of 18/5/2015
+* <s>Host the portfolio site</s> -- 19/05/15
+* <s>Basic Angular store app</s> -- 20/05/15 looks terrible, but works! Need to fix the css 
+* More complex sass Jekyll site -- Have added functionality to the first site - will work on TT next.
+* <s>Host RoR apps with cPanel</s> -- 21/05/15

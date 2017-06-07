@@ -1,0 +1,27 @@
+<!-- ---
+layout: post
+title: "Week 2"
+date: 2015-05-07 15:46:21
+categories: weekly
+permalink: week-2
+--- -->
+
+This week centred around the creation of a few more jQuery apps, testing out Angular with a simple one page app, and the prototype of a small javascript library I would like to publish named Twilight.
+
+
+I started the week with three more slightly more complex canvas apps, which incorporated collisions and some more complex maths.  This is nothing I haven't dealt with before, but I feel like the correct pacing while learning Javascript/jQuery will make me aware of more of their intricacies.
+
+
+Last week I found the [Particles.js][Particles] library, which really opened my eyes to how easy it was to create a useful and interesting library with javascript, so I began work on my own this week. [Twilight.js][Twilight] is still in the early stages but I have created the basis for an active background which simulates a warm summers evening (inspired by the evening of the 19th April 2015) using a canvas element.  The background features randomly generated twinkling stars and planets of various sizes, as well as randomly generated, animated planes and satellites which move accross the sky.
+
+
+While working on Twilight.js towards the end of the week I also completed my goals from last week's post by testing AngularJS with a simple app which displays different information through interaction with different HTML elements. 
+
+
+Goals for next week are to add random shooting stars to Twilight.js as well as adding support for an initialisation file which sets different variables such as plane and satellite frequency and the background colour of the canvas.  Once that is complete, some final tweaking is all that will be required before publication of my first Javascript library on Github!  Once that is complete I will be able to focus more on my AngularJS development and start looking at methods to incorporate persistent data into my apps, allowing for the development of more useful apps like shopping lists, etc!
+
+Hours logged: 15.
+
+
+[Particles]: http://ss-hake.github.io/pages/particlesTest.html
+[Twilight]: http://ss-hake.github.io/pages/twilight.html
